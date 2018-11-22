@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9D537333-7106-49A3-87C1-7E679EFD0B09}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CRM</RootNamespace>
+    <AssemblyName>CRM</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2018.1.116.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2018.1.116.40\Telerik.WinControls.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.ChartView, Version=2018.1.116.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.GridView, Version=2018.1.116.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2018.1.116.40\Telerik.WinControls.GridView.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RadDock, Version=2018.1.116.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.RichTextEditor, Version=2018.1.116.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.Themes.MaterialPink, Version=2018.1.116.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.Themes.Office2007Silver, Version=2018.1.116.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2018.1.116.40\Telerik.WinControls.Themes.Office2007Silver.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Windows8, Version=2018.1.116.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2018.1.116.40\Telerik.WinControls.Themes.Windows8.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2018.1.116.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2018.1.116.40\Telerik.WinControls.UI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TelerikCommon, Version=2018.1.116.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2018.1.116.40\TelerikCommon.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Autorizatsiya.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Autorizatsiya.Designer.cs">
+      <DependentUpon>Autorizatsiya.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CardCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CardCard.Designer.cs">
+      <DependentUpon>CardCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client.cs" />
+    <Compile Include="DataBase.cs" />
+    <Compile Include="FreezeCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FreezeCard.Designer.cs">
+      <DependentUpon>FreezeCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReiterationSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReiterationSchedule.Designer.cs">
+      <DependentUpon>ReiterationSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScheduleCard.Designer.cs">
+      <DependentUpon>ScheduleCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScheduleRoom.Designer.cs">
+      <DependentUpon>ScheduleRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchSchedule.Designer.cs">
+      <DependentUpon>SearchSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectRoom.Designer.cs">
+      <DependentUpon>SelectRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectSchedule.Designer.cs">
+      <DependentUpon>SelectSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectTariff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectTariff.Designer.cs">
+      <DependentUpon>SelectTariff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientCard.Designer.cs">
+      <DependentUpon>ClientCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PayCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PayCard.Designer.cs">
+      <DependentUpon>PayCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RadForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RadForm1.Designer.cs">
+      <DependentUpon>RadForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoomCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoomCard.Designer.cs">
+      <DependentUpon>RoomCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchCard.Designer.cs">
+      <DependentUpon>SearchCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchClients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchClients.Designer.cs">
+      <DependentUpon>SearchClients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchPay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchPay.Designer.cs">
+      <DependentUpon>SearchPay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchRoom.Designer.cs">
+      <DependentUpon>SearchRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchService.Designer.cs">
+      <DependentUpon>SearchService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchTariff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchTariff.Designer.cs">
+      <DependentUpon>SearchTariff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchWorker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchWorker.Designer.cs">
+      <DependentUpon>SearchWorker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectClient.Designer.cs">
+      <DependentUpon>SelectClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectService.Designer.cs">
+      <DependentUpon>SelectService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectWorker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectWorker.Designer.cs">
+      <DependentUpon>SelectWorker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServiceCard.Designer.cs">
+      <DependentUpon>ServiceCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceInTariff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServiceInTariff.Designer.cs">
+      <DependentUpon>ServiceInTariff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TariffCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TariffCard.Designer.cs">
+      <DependentUpon>TariffCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TariffTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TariffTime.Designer.cs">
+      <DependentUpon>TariffTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trainer.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="WorkerCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkerCard.Designer.cs">
+      <DependentUpon>WorkerCard.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Autorizatsiya.resx">
+      <DependentUpon>Autorizatsiya.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CardCard.resx">
+      <DependentUpon>CardCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FreezeCard.resx">
+      <DependentUpon>FreezeCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReiterationSchedule.resx">
+      <DependentUpon>ReiterationSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScheduleCard.resx">
+      <DependentUpon>ScheduleCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScheduleRoom.resx">
+      <DependentUpon>ScheduleRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchSchedule.resx">
+      <DependentUpon>SearchSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectRoom.resx">
+      <DependentUpon>SelectRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectSchedule.resx">
+      <DependentUpon>SelectSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectTariff.resx">
+      <DependentUpon>SelectTariff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientCard.resx">
+      <DependentUpon>ClientCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PayCard.resx">
+      <DependentUpon>PayCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="RadForm1.resx">
+      <DependentUpon>RadForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RoomCard.resx">
+      <DependentUpon>RoomCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchCard.resx">
+      <DependentUpon>SearchCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchClients.resx">
+      <DependentUpon>SearchClients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchPay.resx">
+      <DependentUpon>SearchPay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchRoom.resx">
+      <DependentUpon>SearchRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchService.resx">
+      <DependentUpon>SearchService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchTariff.resx">
+      <DependentUpon>SearchTariff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchWorker.resx">
+      <DependentUpon>SearchWorker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectClient.resx">
+      <DependentUpon>SelectClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectService.resx">
+      <DependentUpon>SelectService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectWorker.resx">
+      <DependentUpon>SelectWorker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServiceCard.resx">
+      <DependentUpon>ServiceCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServiceInTariff.resx">
+      <DependentUpon>ServiceInTariff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TariffCard.resx">
+      <DependentUpon>TariffCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TariffTime.resx">
+      <DependentUpon>TariffTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkerCard.resx">
+      <DependentUpon>WorkerCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <!--sirinie -->
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

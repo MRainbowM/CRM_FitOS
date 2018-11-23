@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CRM
 {
-    class User
+    public class User
     {
         protected int ID;
         protected string Login;

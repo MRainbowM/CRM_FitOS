@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -12,9 +13,11 @@ namespace CRM
         [STAThread]
         static void Main()
         {
+           
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Autorizatsiya());
+            //Application.Run(new Autorizatsiya());
+            Application.Run(new проверка_подключения());
         }
     }
 }

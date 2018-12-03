@@ -18,17 +18,17 @@ namespace CRM
             using (ApplicationContext db = new ApplicationContext())
             {
                 db.Database.EnsureCreated();
-                Us user1 = new Us { Name = "Tom", Age = 33 };
-                Us user2 = new Us { Name = "Alice", Age = 26 };
-                db.Usdd.Add(user1);
-                db.Usdd.Add(user2);
+                Us user1 = new Us { Name = "SSSSSSSSSSS"/*, Age = 33 */};
+                Us user2 = new Us { Name = "AAAAAAAAA", Age = 26 };
+                //db.Usdd.Add(user1);
+                //db.Usdd.Add(user2);
                 db.SaveChanges();
                 label1.Text = "norm";
 
-                var usdd = db.Usdd.ToList();
-                foreach (Us u in usdd)
+                //var usdd = db.Usdd.ToList();
+                //foreach (Us u in usdd)
                 {
-                    comboBox1.Text = u.Name;
+                    //comboBox1.Text = u.Name;
                 }
 
             }

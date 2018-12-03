@@ -16,8 +16,8 @@ namespace CRM
            
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Autorizatsiya());
-            Application.Run(new проверка_подключения());
+            Application.Run(new Autorizatsiya());
+            //Application.Run(new проверка_подключения());
         }
     }
 }

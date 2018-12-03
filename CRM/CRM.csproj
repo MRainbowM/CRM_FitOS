@@ -271,6 +271,7 @@
     <Compile Include="FreezeCard.Designer.cs">
       <DependentUpon>FreezeCard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Photo.cs" />
     <Compile Include="ReiterationSchedule.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -397,6 +398,7 @@
     <Compile Include="SelectWorker.Designer.cs">
       <DependentUpon>SelectWorker.cs</DependentUpon>
     </Compile>
+    <Compile Include="Service.cs" />
     <Compile Include="ServiceCard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -409,6 +411,7 @@
     <Compile Include="ServiceInTariff.Designer.cs">
       <DependentUpon>ServiceInTariff.cs</DependentUpon>
     </Compile>
+    <Compile Include="Tariff.cs" />
     <Compile Include="TariffCard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -424,11 +427,11 @@
     <Compile Include="Trainer.cs" />
     <Compile Include="Us.cs" />
     <Compile Include="User.cs" />
-    <Compile Include="WorkerCard.cs">
+    <Compile Include="TrainerCard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="WorkerCard.Designer.cs">
-      <DependentUpon>WorkerCard.cs</DependentUpon>
+    <Compile Include="TrainerCard.Designer.cs">
+      <DependentUpon>TrainerCard.cs</DependentUpon>
     </Compile>
     <Compile Include="проверка подключения.cs">
       <SubType>Form</SubType>
@@ -532,8 +535,8 @@
     <EmbeddedResource Include="TariffTime.resx">
       <DependentUpon>TariffTime.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="WorkerCard.resx">
-      <DependentUpon>WorkerCard.cs</DependentUpon>
+    <EmbeddedResource Include="TrainerCard.resx">
+      <DependentUpon>TrainerCard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="проверка подключения.resx">
       <DependentUpon>проверка подключения.cs</DependentUpon>
@@ -553,7 +556,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <!--sirinie -->
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -258,10 +258,10 @@ C:\CRM\CRM\obj\x86\Debug\CRM.ServiceCard.resources
 C:\CRM\CRM\obj\x86\Debug\CRM.ServiceInTariff.resources
 C:\CRM\CRM\obj\x86\Debug\CRM.TariffCard.resources
 C:\CRM\CRM\obj\x86\Debug\CRM.TariffTime.resources
-C:\CRM\CRM\obj\x86\Debug\CRM.WorkerCard.resources
 C:\CRM\CRM\obj\x86\Debug\CRM.проверка_подключения.resources
 C:\CRM\CRM\obj\x86\Debug\CRM.csproj.GenerateResource.Cache
 C:\CRM\CRM\obj\x86\Debug\CRM.exe.licenses
 C:\CRM\CRM\obj\x86\Debug\CRM.csproj.CoreCompileInputs.cache
 C:\CRM\CRM\obj\x86\Debug\CRM.exe
 C:\CRM\CRM\obj\x86\Debug\CRM.pdb
+C:\CRM\CRM\obj\x86\Debug\CRM.TrainerCard.resources

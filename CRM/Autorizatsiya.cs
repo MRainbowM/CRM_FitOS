@@ -20,6 +20,7 @@ namespace CRM
         {
             RadForm1 radForm1 = new RadForm1();
             radForm1.Show();
+            this.Visible = false;
         }
     }
 }

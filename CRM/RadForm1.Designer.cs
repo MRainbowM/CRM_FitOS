@@ -113,24 +113,25 @@
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn41 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn42 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn43 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn44 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.Data.FilterDescriptor filterDescriptor28 = new Telerik.WinControls.Data.FilterDescriptor();
             Telerik.WinControls.Data.FilterDescriptor filterDescriptor29 = new Telerik.WinControls.Data.FilterDescriptor();
             Telerik.WinControls.Data.FilterDescriptor filterDescriptor30 = new Telerik.WinControls.Data.FilterDescriptor();
             Telerik.WinControls.Data.SortDescriptor sortDescriptor4 = new Telerik.WinControls.Data.SortDescriptor();
             Telerik.WinControls.UI.TableViewDefinition tableViewDefinition11 = new Telerik.WinControls.UI.TableViewDefinition();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn44 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn45 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn46 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn47 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn48 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn49 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.Data.FilterDescriptor filterDescriptor31 = new Telerik.WinControls.Data.FilterDescriptor();
             Telerik.WinControls.Data.FilterDescriptor filterDescriptor32 = new Telerik.WinControls.Data.FilterDescriptor();
             Telerik.WinControls.Data.FilterDescriptor filterDescriptor33 = new Telerik.WinControls.Data.FilterDescriptor();
             Telerik.WinControls.Data.SortDescriptor sortDescriptor5 = new Telerik.WinControls.Data.SortDescriptor();
             Telerik.WinControls.UI.TableViewDefinition tableViewDefinition12 = new Telerik.WinControls.UI.TableViewDefinition();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn49 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn50 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn51 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn52 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.UI.TableViewDefinition tableViewDefinition13 = new Telerik.WinControls.UI.TableViewDefinition();
             Telerik.WinControls.UI.CartesianArea cartesianArea1 = new Telerik.WinControls.UI.CartesianArea();
             Telerik.WinControls.UI.CategoricalAxis categoricalAxis1 = new Telerik.WinControls.UI.CategoricalAxis();
@@ -138,7 +139,7 @@
             Telerik.WinControls.UI.AreaSeries areaSeries1 = new Telerik.WinControls.UI.AreaSeries();
             Telerik.WinControls.UI.AreaSeries areaSeries2 = new Telerik.WinControls.UI.AreaSeries();
             Telerik.WinControls.UI.AreaSeries areaSeries3 = new Telerik.WinControls.UI.AreaSeries();
-            this.radPageView = new Telerik.WinControls.UI.RadPageView();
+            this.PageView = new Telerik.WinControls.UI.RadPageView();
             this.radPageViewPageOperation = new Telerik.WinControls.UI.RadPageViewPage();
             this.radPageView1 = new Telerik.WinControls.UI.RadPageView();
             this.radPageViewPage1 = new Telerik.WinControls.UI.RadPageViewPage();
@@ -196,20 +197,20 @@
             this.radCheckBox1 = new Telerik.WinControls.UI.RadCheckBox();
             this.searchSchedule = new Telerik.WinControls.UI.RadButton();
             this.addSchedule = new Telerik.WinControls.UI.RadButton();
-            this.radPageViewPageClients = new Telerik.WinControls.UI.RadPageViewPage();
-            this.radGridViewCLients = new Telerik.WinControls.UI.RadGridView();
+            this.pvClients = new Telerik.WinControls.UI.RadPageViewPage();
+            this.GVClients = new Telerik.WinControls.UI.RadGridView();
             this.searchClient = new Telerik.WinControls.UI.RadButton();
             this.AddClient = new Telerik.WinControls.UI.RadButton();
             this.radPageViewPageCards = new Telerik.WinControls.UI.RadPageViewPage();
             this.radGridViewCard = new Telerik.WinControls.UI.RadGridView();
             this.searchCard = new Telerik.WinControls.UI.RadButton();
             this.addCard = new Telerik.WinControls.UI.RadButton();
-            this.radPageViewPageWorkers = new Telerik.WinControls.UI.RadPageViewPage();
-            this.radGridViewWorkers = new Telerik.WinControls.UI.RadGridView();
+            this.pvTrainers = new Telerik.WinControls.UI.RadPageViewPage();
+            this.GVTrainers = new Telerik.WinControls.UI.RadGridView();
             this.searchWorker = new Telerik.WinControls.UI.RadButton();
-            this.addWorker = new Telerik.WinControls.UI.RadButton();
-            this.radPageViewPageServices = new Telerik.WinControls.UI.RadPageViewPage();
-            this.radGridViewServices = new Telerik.WinControls.UI.RadGridView();
+            this.addTrainer = new Telerik.WinControls.UI.RadButton();
+            this.pvServices = new Telerik.WinControls.UI.RadPageViewPage();
+            this.GVServices = new Telerik.WinControls.UI.RadGridView();
             this.searchService = new Telerik.WinControls.UI.RadButton();
             this.addService = new Telerik.WinControls.UI.RadButton();
             this.radPageViewPageTariffs = new Telerik.WinControls.UI.RadPageViewPage();
@@ -250,8 +251,8 @@
             this.radMenuItemPay = new Telerik.WinControls.UI.RadMenuItem();
             this.radMenu1 = new Telerik.WinControls.UI.RadMenu();
             this.radMenuItemStatistics = new Telerik.WinControls.UI.RadMenuItem();
-            ((System.ComponentModel.ISupportInitialize)(this.radPageView)).BeginInit();
-            this.radPageView.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PageView)).BeginInit();
+            this.PageView.SuspendLayout();
             this.radPageViewPageOperation.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radPageView1)).BeginInit();
             this.radPageView1.SuspendLayout();
@@ -317,9 +318,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.radCheckBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchSchedule)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.addSchedule)).BeginInit();
-            this.radPageViewPageClients.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridViewCLients)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridViewCLients.MasterTemplate)).BeginInit();
+            this.pvClients.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GVClients)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GVClients.MasterTemplate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchClient)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AddClient)).BeginInit();
             this.radPageViewPageCards.SuspendLayout();
@@ -327,14 +328,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.radGridViewCard.MasterTemplate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchCard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.addCard)).BeginInit();
-            this.radPageViewPageWorkers.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridViewWorkers)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridViewWorkers.MasterTemplate)).BeginInit();
+            this.pvTrainers.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GVTrainers)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GVTrainers.MasterTemplate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchWorker)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.addWorker)).BeginInit();
-            this.radPageViewPageServices.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridViewServices)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridViewServices.MasterTemplate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.addTrainer)).BeginInit();
+            this.pvServices.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GVServices)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GVServices.MasterTemplate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchService)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.addService)).BeginInit();
             this.radPageViewPageTariffs.SuspendLayout();
@@ -373,26 +374,27 @@
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
-            // radPageView
+            // PageView
             // 
-            this.radPageView.Controls.Add(this.radPageViewPageOperation);
-            this.radPageView.Controls.Add(this.radPageViewPageRepaymonts);
-            this.radPageView.Controls.Add(this.radPageViewPageSchedule);
-            this.radPageView.Controls.Add(this.radPageViewPageClients);
-            this.radPageView.Controls.Add(this.radPageViewPageCards);
-            this.radPageView.Controls.Add(this.radPageViewPageWorkers);
-            this.radPageView.Controls.Add(this.radPageViewPageServices);
-            this.radPageView.Controls.Add(this.radPageViewPageTariffs);
-            this.radPageView.Controls.Add(this.radPageViewPageRooms);
-            this.radPageView.Controls.Add(this.radPageViewPageStatistics);
-            this.radPageView.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radPageView.Location = new System.Drawing.Point(12, 26);
-            this.radPageView.Name = "radPageView";
-            this.radPageView.SelectedPage = this.radPageViewPageRepaymonts;
-            this.radPageView.Size = new System.Drawing.Size(794, 461);
-            this.radPageView.TabIndex = 0;
-            ((Telerik.WinControls.UI.RadPageViewStripElement)(this.radPageView.GetChildAt(0))).ShowItemPinButton = false;
-            ((Telerik.WinControls.UI.RadPageViewStripElement)(this.radPageView.GetChildAt(0))).ShowItemCloseButton = false;
+            this.PageView.Controls.Add(this.radPageViewPageOperation);
+            this.PageView.Controls.Add(this.radPageViewPageRepaymonts);
+            this.PageView.Controls.Add(this.radPageViewPageSchedule);
+            this.PageView.Controls.Add(this.pvClients);
+            this.PageView.Controls.Add(this.radPageViewPageCards);
+            this.PageView.Controls.Add(this.pvTrainers);
+            this.PageView.Controls.Add(this.pvServices);
+            this.PageView.Controls.Add(this.radPageViewPageTariffs);
+            this.PageView.Controls.Add(this.radPageViewPageRooms);
+            this.PageView.Controls.Add(this.radPageViewPageStatistics);
+            this.PageView.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.PageView.Location = new System.Drawing.Point(12, 26);
+            this.PageView.Name = "PageView";
+            this.PageView.SelectedPage = this.pvServices;
+            this.PageView.Size = new System.Drawing.Size(794, 461);
+            this.PageView.TabIndex = 0;
+            this.PageView.SelectedPageChanged += new System.EventHandler(this.PageView_SelectedPageChanged);
+            ((Telerik.WinControls.UI.RadPageViewStripElement)(this.PageView.GetChildAt(0))).ShowItemPinButton = false;
+            ((Telerik.WinControls.UI.RadPageViewStripElement)(this.PageView.GetChildAt(0))).ShowItemCloseButton = false;
             // 
             // radPageViewPageOperation
             // 
@@ -1099,46 +1101,46 @@
             this.addSchedule.Text = "Создать запись";
             this.addSchedule.Click += new System.EventHandler(this.addSchedule_Click);
             // 
-            // radPageViewPageClients
+            // pvClients
             // 
-            this.radPageViewPageClients.Controls.Add(this.radGridViewCLients);
-            this.radPageViewPageClients.Controls.Add(this.searchClient);
-            this.radPageViewPageClients.Controls.Add(this.AddClient);
-            this.radPageViewPageClients.ItemSize = new System.Drawing.SizeF(70F, 29F);
-            this.radPageViewPageClients.Location = new System.Drawing.Point(10, 38);
-            this.radPageViewPageClients.Name = "radPageViewPageClients";
-            this.radPageViewPageClients.Size = new System.Drawing.Size(773, 412);
-            this.radPageViewPageClients.Text = "Клиенты";
+            this.pvClients.Controls.Add(this.GVClients);
+            this.pvClients.Controls.Add(this.searchClient);
+            this.pvClients.Controls.Add(this.AddClient);
+            this.pvClients.ItemSize = new System.Drawing.SizeF(70F, 29F);
+            this.pvClients.Location = new System.Drawing.Point(10, 38);
+            this.pvClients.Name = "pvClients";
+            this.pvClients.Size = new System.Drawing.Size(773, 412);
+            this.pvClients.Text = "Клиенты";
             // 
-            // radGridViewCLients
+            // GVClients
             // 
-            this.radGridViewCLients.Location = new System.Drawing.Point(3, 33);
+            this.GVClients.Location = new System.Drawing.Point(3, 33);
             // 
             // 
             // 
-            this.radGridViewCLients.MasterTemplate.AllowColumnReorder = false;
-            gridViewTextBoxColumn24.HeaderText = "ID Клиента";
-            gridViewTextBoxColumn24.Name = "columnID";
-            gridViewTextBoxColumn24.Width = 150;
+            this.GVClients.MasterTemplate.AllowAddNewRow = false;
+            this.GVClients.MasterTemplate.AllowColumnReorder = false;
+            gridViewTextBoxColumn24.HeaderText = "ID";
+            gridViewTextBoxColumn24.Name = "colID";
             gridViewTextBoxColumn25.HeaderText = "Фамилия";
-            gridViewTextBoxColumn25.Name = "surname";
+            gridViewTextBoxColumn25.Name = "colSurname";
             gridViewTextBoxColumn25.Width = 150;
             gridViewTextBoxColumn26.HeaderText = "Имя";
-            gridViewTextBoxColumn26.Name = "name";
+            gridViewTextBoxColumn26.Name = "colName";
             gridViewTextBoxColumn26.Width = 150;
             gridViewTextBoxColumn27.HeaderText = "Отчество";
-            gridViewTextBoxColumn27.Name = "patronymic";
+            gridViewTextBoxColumn27.Name = "colMiddleName";
             gridViewTextBoxColumn27.Width = 150;
             gridViewTextBoxColumn28.HeaderText = "Телефон";
-            gridViewTextBoxColumn28.Name = "phone";
+            gridViewTextBoxColumn28.Name = "colPhone";
             gridViewTextBoxColumn28.Width = 150;
-            this.radGridViewCLients.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
+            this.GVClients.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
             gridViewTextBoxColumn24,
             gridViewTextBoxColumn25,
             gridViewTextBoxColumn26,
             gridViewTextBoxColumn27,
             gridViewTextBoxColumn28});
-            this.radGridViewCLients.MasterTemplate.FilterDescriptors.AddRange(new Telerik.WinControls.Data.FilterDescriptor[] {
+            this.GVClients.MasterTemplate.FilterDescriptors.AddRange(new Telerik.WinControls.Data.FilterDescriptor[] {
             filterDescriptor1,
             filterDescriptor2,
             filterDescriptor3,
@@ -1148,13 +1150,14 @@
             filterDescriptor7,
             filterDescriptor8,
             filterDescriptor9});
-            this.radGridViewCLients.MasterTemplate.SortDescriptors.AddRange(new Telerik.WinControls.Data.SortDescriptor[] {
+            this.GVClients.MasterTemplate.SortDescriptors.AddRange(new Telerik.WinControls.Data.SortDescriptor[] {
             sortDescriptor1});
-            this.radGridViewCLients.MasterTemplate.ViewDefinition = tableViewDefinition8;
-            this.radGridViewCLients.Name = "radGridViewCLients";
-            this.radGridViewCLients.Size = new System.Drawing.Size(767, 376);
-            this.radGridViewCLients.TabIndex = 8;
-            this.radGridViewCLients.CellDoubleClick += new Telerik.WinControls.UI.GridViewCellEventHandler(this.radGridViewCLients_CellDoubleClick);
+            this.GVClients.MasterTemplate.ViewDefinition = tableViewDefinition8;
+            this.GVClients.Name = "GVClients";
+            this.GVClients.ReadOnly = true;
+            this.GVClients.Size = new System.Drawing.Size(767, 376);
+            this.GVClients.TabIndex = 8;
+            this.GVClients.CellDoubleClick += new Telerik.WinControls.UI.GridViewCellEventHandler(this.GVClients_CellDoubleClick);
             // 
             // searchClient
             // 
@@ -1257,46 +1260,45 @@
             this.addCard.Text = "Добавить карту";
             this.addCard.Click += new System.EventHandler(this.addCard_Click);
             // 
-            // radPageViewPageWorkers
+            // pvTrainers
             // 
-            this.radPageViewPageWorkers.Controls.Add(this.radGridViewWorkers);
-            this.radPageViewPageWorkers.Controls.Add(this.searchWorker);
-            this.radPageViewPageWorkers.Controls.Add(this.addWorker);
-            this.radPageViewPageWorkers.ItemSize = new System.Drawing.SizeF(81F, 29F);
-            this.radPageViewPageWorkers.Location = new System.Drawing.Point(10, 38);
-            this.radPageViewPageWorkers.Name = "radPageViewPageWorkers";
-            this.radPageViewPageWorkers.Size = new System.Drawing.Size(773, 412);
-            this.radPageViewPageWorkers.Text = "Работники";
+            this.pvTrainers.Controls.Add(this.GVTrainers);
+            this.pvTrainers.Controls.Add(this.searchWorker);
+            this.pvTrainers.Controls.Add(this.addTrainer);
+            this.pvTrainers.ItemSize = new System.Drawing.SizeF(68F, 29F);
+            this.pvTrainers.Location = new System.Drawing.Point(10, 38);
+            this.pvTrainers.Name = "pvTrainers";
+            this.pvTrainers.Size = new System.Drawing.Size(773, 412);
+            this.pvTrainers.Text = "Тренера";
             // 
-            // radGridViewWorkers
+            // GVTrainers
             // 
-            this.radGridViewWorkers.Location = new System.Drawing.Point(3, 33);
+            this.GVTrainers.Location = new System.Drawing.Point(3, 33);
             // 
             // 
             // 
-            this.radGridViewWorkers.MasterTemplate.AllowColumnReorder = false;
-            gridViewTextBoxColumn36.HeaderText = "ID работника";
-            gridViewTextBoxColumn36.Name = "columnID";
-            gridViewTextBoxColumn36.Width = 150;
+            this.GVTrainers.MasterTemplate.AllowColumnReorder = false;
+            gridViewTextBoxColumn36.HeaderText = "ID";
+            gridViewTextBoxColumn36.Name = "colID";
             gridViewTextBoxColumn37.HeaderText = "Фамилия";
-            gridViewTextBoxColumn37.Name = "surname";
+            gridViewTextBoxColumn37.Name = "colSurname";
             gridViewTextBoxColumn37.Width = 150;
             gridViewTextBoxColumn38.HeaderText = "Имя";
-            gridViewTextBoxColumn38.Name = "name";
+            gridViewTextBoxColumn38.Name = "colName";
             gridViewTextBoxColumn38.Width = 150;
             gridViewTextBoxColumn39.HeaderText = "Отчество";
-            gridViewTextBoxColumn39.Name = "patronymic";
+            gridViewTextBoxColumn39.Name = "colMiddleName";
             gridViewTextBoxColumn39.Width = 150;
             gridViewTextBoxColumn40.HeaderText = "Телефон";
-            gridViewTextBoxColumn40.Name = "phone";
+            gridViewTextBoxColumn40.Name = "colPhone";
             gridViewTextBoxColumn40.Width = 150;
-            this.radGridViewWorkers.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
+            this.GVTrainers.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
             gridViewTextBoxColumn36,
             gridViewTextBoxColumn37,
             gridViewTextBoxColumn38,
             gridViewTextBoxColumn39,
             gridViewTextBoxColumn40});
-            this.radGridViewWorkers.MasterTemplate.FilterDescriptors.AddRange(new Telerik.WinControls.Data.FilterDescriptor[] {
+            this.GVTrainers.MasterTemplate.FilterDescriptors.AddRange(new Telerik.WinControls.Data.FilterDescriptor[] {
             filterDescriptor19,
             filterDescriptor20,
             filterDescriptor21,
@@ -1306,13 +1308,14 @@
             filterDescriptor25,
             filterDescriptor26,
             filterDescriptor27});
-            this.radGridViewWorkers.MasterTemplate.SortDescriptors.AddRange(new Telerik.WinControls.Data.SortDescriptor[] {
+            this.GVTrainers.MasterTemplate.SortDescriptors.AddRange(new Telerik.WinControls.Data.SortDescriptor[] {
             sortDescriptor3});
-            this.radGridViewWorkers.MasterTemplate.ViewDefinition = tableViewDefinition10;
-            this.radGridViewWorkers.Name = "radGridViewWorkers";
-            this.radGridViewWorkers.Size = new System.Drawing.Size(767, 376);
-            this.radGridViewWorkers.TabIndex = 7;
-            this.radGridViewWorkers.CellDoubleClick += new Telerik.WinControls.UI.GridViewCellEventHandler(this.radGridViewWorkers_CellDoubleClick);
+            this.GVTrainers.MasterTemplate.ViewDefinition = tableViewDefinition10;
+            this.GVTrainers.Name = "GVTrainers";
+            this.GVTrainers.ReadOnly = true;
+            this.GVTrainers.Size = new System.Drawing.Size(767, 376);
+            this.GVTrainers.TabIndex = 7;
+            this.GVTrainers.CellDoubleClick += new Telerik.WinControls.UI.GridViewCellEventHandler(this.GVTrainers_CellDoubleClick);
             // 
             // searchWorker
             // 
@@ -1323,57 +1326,61 @@
             this.searchWorker.Text = "Поиск";
             this.searchWorker.Click += new System.EventHandler(this.searchWorker_Click);
             // 
-            // addWorker
+            // addTrainer
             // 
-            this.addWorker.Location = new System.Drawing.Point(3, 3);
-            this.addWorker.Name = "addWorker";
-            this.addWorker.Size = new System.Drawing.Size(110, 24);
-            this.addWorker.TabIndex = 5;
-            this.addWorker.Text = "Создать работника";
-            this.addWorker.Click += new System.EventHandler(this.addWorker_Click);
+            this.addTrainer.Location = new System.Drawing.Point(3, 3);
+            this.addTrainer.Name = "addTrainer";
+            this.addTrainer.Size = new System.Drawing.Size(110, 24);
+            this.addTrainer.TabIndex = 5;
+            this.addTrainer.Text = "Создать работника";
+            this.addTrainer.Click += new System.EventHandler(this.addTrainer_Click);
             // 
-            // radPageViewPageServices
+            // pvServices
             // 
-            this.radPageViewPageServices.Controls.Add(this.radGridViewServices);
-            this.radPageViewPageServices.Controls.Add(this.searchService);
-            this.radPageViewPageServices.Controls.Add(this.addService);
-            this.radPageViewPageServices.ItemSize = new System.Drawing.SizeF(58F, 29F);
-            this.radPageViewPageServices.Location = new System.Drawing.Point(10, 38);
-            this.radPageViewPageServices.Name = "radPageViewPageServices";
-            this.radPageViewPageServices.Size = new System.Drawing.Size(773, 412);
-            this.radPageViewPageServices.Text = "Услуги";
+            this.pvServices.Controls.Add(this.GVServices);
+            this.pvServices.Controls.Add(this.searchService);
+            this.pvServices.Controls.Add(this.addService);
+            this.pvServices.ItemSize = new System.Drawing.SizeF(58F, 29F);
+            this.pvServices.Location = new System.Drawing.Point(10, 38);
+            this.pvServices.Name = "pvServices";
+            this.pvServices.Size = new System.Drawing.Size(773, 412);
+            this.pvServices.Text = "Услуги";
             // 
-            // radGridViewServices
+            // GVServices
             // 
-            this.radGridViewServices.Location = new System.Drawing.Point(3, 33);
+            this.GVServices.Location = new System.Drawing.Point(3, 33);
             // 
             // 
             // 
-            this.radGridViewServices.MasterTemplate.AllowColumnReorder = false;
-            gridViewTextBoxColumn41.HeaderText = "Название";
-            gridViewTextBoxColumn41.Name = "name";
-            gridViewTextBoxColumn41.Width = 400;
-            gridViewTextBoxColumn42.HeaderText = "Стоимость";
-            gridViewTextBoxColumn42.Name = "cost";
-            gridViewTextBoxColumn42.Width = 250;
-            gridViewTextBoxColumn43.HeaderText = "Кол-во человек";
-            gridViewTextBoxColumn43.Name = "column1";
-            gridViewTextBoxColumn43.Width = 95;
-            this.radGridViewServices.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
+            this.GVServices.MasterTemplate.AllowColumnReorder = false;
+            gridViewTextBoxColumn41.HeaderText = "ID";
+            gridViewTextBoxColumn41.Name = "colID";
+            gridViewTextBoxColumn42.HeaderText = "Название";
+            gridViewTextBoxColumn42.Name = "colName";
+            gridViewTextBoxColumn42.Width = 400;
+            gridViewTextBoxColumn43.HeaderText = "Стоимость";
+            gridViewTextBoxColumn43.Name = "colCost";
+            gridViewTextBoxColumn43.Width = 100;
+            gridViewTextBoxColumn44.HeaderText = "Кол-во человек";
+            gridViewTextBoxColumn44.Name = "colPeople";
+            gridViewTextBoxColumn44.Width = 100;
+            this.GVServices.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
             gridViewTextBoxColumn41,
             gridViewTextBoxColumn42,
-            gridViewTextBoxColumn43});
-            this.radGridViewServices.MasterTemplate.FilterDescriptors.AddRange(new Telerik.WinControls.Data.FilterDescriptor[] {
+            gridViewTextBoxColumn43,
+            gridViewTextBoxColumn44});
+            this.GVServices.MasterTemplate.FilterDescriptors.AddRange(new Telerik.WinControls.Data.FilterDescriptor[] {
             filterDescriptor28,
             filterDescriptor29,
             filterDescriptor30});
-            this.radGridViewServices.MasterTemplate.SortDescriptors.AddRange(new Telerik.WinControls.Data.SortDescriptor[] {
+            this.GVServices.MasterTemplate.SortDescriptors.AddRange(new Telerik.WinControls.Data.SortDescriptor[] {
             sortDescriptor4});
-            this.radGridViewServices.MasterTemplate.ViewDefinition = tableViewDefinition11;
-            this.radGridViewServices.Name = "radGridViewServices";
-            this.radGridViewServices.Size = new System.Drawing.Size(767, 376);
-            this.radGridViewServices.TabIndex = 9;
-            this.radGridViewServices.CellDoubleClick += new Telerik.WinControls.UI.GridViewCellEventHandler(this.radGridViewServices_CellDoubleClick);
+            this.GVServices.MasterTemplate.ViewDefinition = tableViewDefinition11;
+            this.GVServices.Name = "GVServices";
+            this.GVServices.ReadOnly = true;
+            this.GVServices.Size = new System.Drawing.Size(767, 376);
+            this.GVServices.TabIndex = 9;
+            this.GVServices.CellDoubleClick += new Telerik.WinControls.UI.GridViewCellEventHandler(this.GVServices_CellDoubleClick);
             // 
             // searchService
             // 
@@ -1411,27 +1418,27 @@
             // 
             // 
             this.radGridViewTariff.MasterTemplate.AllowColumnReorder = false;
-            gridViewTextBoxColumn44.HeaderText = "ID тарифа";
-            gridViewTextBoxColumn44.Name = "columnID";
-            gridViewTextBoxColumn44.Width = 150;
-            gridViewTextBoxColumn45.HeaderText = "Название";
-            gridViewTextBoxColumn45.Name = "name";
+            gridViewTextBoxColumn45.HeaderText = "ID тарифа";
+            gridViewTextBoxColumn45.Name = "columnID";
             gridViewTextBoxColumn45.Width = 150;
-            gridViewTextBoxColumn46.HeaderText = "Стоимость";
-            gridViewTextBoxColumn46.Name = "cost";
+            gridViewTextBoxColumn46.HeaderText = "Название";
+            gridViewTextBoxColumn46.Name = "name";
             gridViewTextBoxColumn46.Width = 150;
-            gridViewTextBoxColumn47.HeaderText = "Дата начала продаж";
-            gridViewTextBoxColumn47.Name = "date1";
+            gridViewTextBoxColumn47.HeaderText = "Стоимость";
+            gridViewTextBoxColumn47.Name = "cost";
             gridViewTextBoxColumn47.Width = 150;
-            gridViewTextBoxColumn48.HeaderText = "Дата последней продажи";
-            gridViewTextBoxColumn48.Name = "date2";
+            gridViewTextBoxColumn48.HeaderText = "Дата начала продаж";
+            gridViewTextBoxColumn48.Name = "date1";
             gridViewTextBoxColumn48.Width = 150;
+            gridViewTextBoxColumn49.HeaderText = "Дата последней продажи";
+            gridViewTextBoxColumn49.Name = "date2";
+            gridViewTextBoxColumn49.Width = 150;
             this.radGridViewTariff.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewTextBoxColumn44,
             gridViewTextBoxColumn45,
             gridViewTextBoxColumn46,
             gridViewTextBoxColumn47,
-            gridViewTextBoxColumn48});
+            gridViewTextBoxColumn48,
+            gridViewTextBoxColumn49});
             this.radGridViewTariff.MasterTemplate.FilterDescriptors.AddRange(new Telerik.WinControls.Data.FilterDescriptor[] {
             filterDescriptor31,
             filterDescriptor32,
@@ -1507,19 +1514,19 @@
             // 
             // 
             // 
-            gridViewTextBoxColumn49.HeaderText = "Название";
-            gridViewTextBoxColumn49.Name = "Name";
-            gridViewTextBoxColumn49.Width = 150;
-            gridViewTextBoxColumn50.HeaderText = "Оборудование";
-            gridViewTextBoxColumn50.Name = "equipment";
-            gridViewTextBoxColumn50.Width = 498;
-            gridViewTextBoxColumn51.HeaderText = "Вместимость";
-            gridViewTextBoxColumn51.Name = "capacity";
-            gridViewTextBoxColumn51.Width = 100;
+            gridViewTextBoxColumn50.HeaderText = "Название";
+            gridViewTextBoxColumn50.Name = "Name";
+            gridViewTextBoxColumn50.Width = 150;
+            gridViewTextBoxColumn51.HeaderText = "Оборудование";
+            gridViewTextBoxColumn51.Name = "equipment";
+            gridViewTextBoxColumn51.Width = 498;
+            gridViewTextBoxColumn52.HeaderText = "Вместимость";
+            gridViewTextBoxColumn52.Name = "capacity";
+            gridViewTextBoxColumn52.Width = 100;
             this.radGridViewRoom.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewTextBoxColumn49,
             gridViewTextBoxColumn50,
-            gridViewTextBoxColumn51});
+            gridViewTextBoxColumn51,
+            gridViewTextBoxColumn52});
             this.radGridViewRoom.MasterTemplate.ViewDefinition = tableViewDefinition13;
             this.radGridViewRoom.Name = "radGridViewRoom";
             this.radGridViewRoom.Size = new System.Drawing.Size(767, 376);
@@ -1741,7 +1748,7 @@
             // radMenuItemWorkers
             // 
             this.radMenuItemWorkers.Name = "radMenuItemWorkers";
-            this.radMenuItemWorkers.Text = "Работники";
+            this.radMenuItemWorkers.Text = "Тренера";
             this.radMenuItemWorkers.Click += new System.EventHandler(this.radMenuItemWorkers_Click);
             // 
             // radMenuItemServices
@@ -1798,7 +1805,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(819, 499);
             this.Controls.Add(this.radMenu1);
-            this.Controls.Add(this.radPageView);
+            this.Controls.Add(this.PageView);
             this.Name = "RadForm1";
             // 
             // 
@@ -1806,8 +1813,8 @@
             this.RootElement.ApplyShapeToControl = true;
             this.Text = "CRM";
             this.Load += new System.EventHandler(this.RadForm1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.radPageView)).EndInit();
-            this.radPageView.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PageView)).EndInit();
+            this.PageView.ResumeLayout(false);
             this.radPageViewPageOperation.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.radPageView1)).EndInit();
             this.radPageView1.ResumeLayout(false);
@@ -1881,9 +1888,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.radCheckBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchSchedule)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.addSchedule)).EndInit();
-            this.radPageViewPageClients.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.radGridViewCLients.MasterTemplate)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridViewCLients)).EndInit();
+            this.pvClients.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.GVClients.MasterTemplate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GVClients)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchClient)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AddClient)).EndInit();
             this.radPageViewPageCards.ResumeLayout(false);
@@ -1891,14 +1898,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.radGridViewCard)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchCard)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.addCard)).EndInit();
-            this.radPageViewPageWorkers.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.radGridViewWorkers.MasterTemplate)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridViewWorkers)).EndInit();
+            this.pvTrainers.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.GVTrainers.MasterTemplate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GVTrainers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchWorker)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.addWorker)).EndInit();
-            this.radPageViewPageServices.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.radGridViewServices.MasterTemplate)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridViewServices)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.addTrainer)).EndInit();
+            this.pvServices.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.GVServices.MasterTemplate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GVServices)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchService)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.addService)).EndInit();
             this.radPageViewPageTariffs.ResumeLayout(false);
@@ -1945,26 +1952,26 @@
 
         #endregion
 
-        private Telerik.WinControls.UI.RadPageView radPageView;
-        private Telerik.WinControls.UI.RadPageViewPage radPageViewPageClients;
+        private Telerik.WinControls.UI.RadPageView PageView;
+        private Telerik.WinControls.UI.RadPageViewPage pvClients;
         private Telerik.WinControls.UI.RadPageViewPage radPageViewPageCards;
-        private Telerik.WinControls.UI.RadPageViewPage radPageViewPageWorkers;
-        private Telerik.WinControls.UI.RadPageViewPage radPageViewPageServices;
+        private Telerik.WinControls.UI.RadPageViewPage pvTrainers;
+        private Telerik.WinControls.UI.RadPageViewPage pvServices;
         private Telerik.WinControls.UI.RadPageViewPage radPageViewPageTariffs;
         private Telerik.WinControls.UI.RadButton searchClient;
         private Telerik.WinControls.UI.RadButton AddClient;
         private Telerik.WinControls.UI.RadButton searchCard;
         private Telerik.WinControls.UI.RadButton addCard;
-        private Telerik.WinControls.UI.RadGridView radGridViewWorkers;
+        private Telerik.WinControls.UI.RadGridView GVTrainers;
         private Telerik.WinControls.UI.RadButton searchWorker;
-        private Telerik.WinControls.UI.RadButton addWorker;
-        private Telerik.WinControls.UI.RadGridView radGridViewServices;
+        private Telerik.WinControls.UI.RadButton addTrainer;
+        private Telerik.WinControls.UI.RadGridView GVServices;
         private Telerik.WinControls.UI.RadButton searchService;
         private Telerik.WinControls.UI.RadButton addService;
         private Telerik.WinControls.UI.RadGridView radGridViewTariff;
         private Telerik.WinControls.UI.RadButton searchTariff;
         private Telerik.WinControls.UI.RadButton addTariff;
-        private Telerik.WinControls.UI.RadGridView radGridViewCLients;
+        private Telerik.WinControls.UI.RadGridView GVClients;
         private Telerik.WinControls.UI.RadGridView radGridViewCard;
         private Telerik.WinControls.UI.RadPageViewPage radPageViewPageSchedule;
         private Telerik.WinControls.UI.RadPageViewPage radPageViewPageRooms;

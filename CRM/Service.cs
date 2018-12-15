@@ -12,7 +12,8 @@ namespace CRM
     {
         private int ID;
         private string Name;
-        private double Cost;
+        private int Duration;
+        private decimal Cost;
         private int NumberOfPeople;
         private string Comment;
         private string DateDelete;
@@ -27,7 +28,12 @@ namespace CRM
             get { return Name; }
             private set { Name = value; }
         }
-        public double cost
+        public int duration
+        {
+            get { return Duration; }
+            private set { Duration = value; }
+        }
+        public decimal cost
         {
             get { return Cost; }
             private set { Cost = value; }
@@ -43,10 +49,17 @@ namespace CRM
             private set { Comment = value; }
         }
 
+        //public ICollection<ServicesInTariff> ServicesInTariff { get; set; }
+
+        //public Service()
+        //{
+        //    ServicesInTariff = new List<ServicesInTariff>();
+        //}
+
+        //public List<Tariff> Tariffs;
 
 
-
-        public void Add(string Name, double Cost, int NumberOfPeople, string Comment)
+        public int Add(string Name, decimal Cost, int NumberOfPeople, string Comment, int Duration)
         {
             using (ApplicationContext db = new ApplicationContext())
             {
@@ -56,18 +69,51 @@ namespace CRM
                     Name = Name,
                     Cost = Cost,
                     NumberOfPeople = NumberOfPeople,
-                    Comment = Comment
+                    Comment = Comment,
+                    Duration = Duration
                 };
                 db.Services.Add(service);
+                db.SaveChanges();
+                int ID_Service = service.id;
+                return ID_Service;
+            }
+        }
+
+        public void Save(int ID_Service, string Name, decimal Cost, int NumberOfPeople, string Comment, int Duration)
+        {
+            using (ApplicationContext db = new ApplicationContext())
+            {
+                db.Database.EnsureCreated();
+                Service service = db.Services.Where(c => c.id == ID_Service).FirstOrDefault();
+                service.name = Name;
+                service.cost = Cost;
+                service.numberOfPeople = NumberOfPeople;
+                service.comment = Comment;
+                service.duration = Duration;
+
                 db.SaveChanges();
             }
         }
 
-        public static Service FindServiceByID(int ID_Service)
+        public static Service FindByID(int ID_Service)
         {
             ApplicationContext db = new ApplicationContext();
             Service service = db.Services.Where(x => x.DateDelete == null && x.ID == ID_Service).FirstOrDefault();
             return service;
+        }
+
+        public static int FindIDByName(string Name)
+        {
+            int ID = 0;
+            List<Service> Services = Service.GetAll();
+            for (int i = 0; i < Services.Count; i++)
+            {
+                if (Services[i].name == Name)
+                {
+                    ID = Services[i].id;
+                }
+            }
+            return ID;
         }
 
         public static List<Service> GetAll()
@@ -75,14 +121,15 @@ namespace CRM
             ApplicationContext db = new ApplicationContext();
 
             List<Service> ServiceList = db.Services
-                    .Where(x => x.DateDelete == null  /*x.ID == 6*/)
+                    .Where(x => x.DateDelete == null)
                     .Select(x => new Service
                     {
                         ID = x.ID,
                         Name = x.Name,
                         Comment = x.comment,
                         Cost = x.Cost,
-                        NumberOfPeople = x.NumberOfPeople
+                        NumberOfPeople = x.NumberOfPeople,
+                        Duration = x.Duration
                     }).ToList();
             return ServiceList;
         }

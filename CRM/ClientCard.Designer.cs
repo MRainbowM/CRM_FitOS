@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn19 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn20 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition10 = new Telerik.WinControls.UI.TableViewDefinition();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition11 = new Telerik.WinControls.UI.TableViewDefinition();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn21 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn22 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn23 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn24 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition12 = new Telerik.WinControls.UI.TableViewDefinition();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ClientCard));
-            this.PWClient = new Telerik.WinControls.UI.RadPageView();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn1 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn1 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn2 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn3 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn4 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn5 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn6 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn7 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition2 = new Telerik.WinControls.UI.TableViewDefinition();
+            this.PVClients = new Telerik.WinControls.UI.RadPageView();
             this.pvClient = new Telerik.WinControls.UI.RadPageViewPage();
             this.tbEmail = new Telerik.WinControls.UI.RadTextBox();
             this.Email = new Telerik.WinControls.UI.RadLabel();
@@ -52,7 +52,7 @@
             this.btnSave = new Telerik.WinControls.UI.RadButton();
             this.radLabel5 = new Telerik.WinControls.UI.RadLabel();
             this.tbComment = new Telerik.WinControls.UI.RadRichTextEditor();
-            this.radButton1 = new Telerik.WinControls.UI.RadButton();
+            this.btnAddPhoto = new Telerik.WinControls.UI.RadButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.radLabel4 = new Telerik.WinControls.UI.RadLabel();
             this.tbMiddleName = new Telerik.WinControls.UI.RadTextBox();
@@ -74,21 +74,18 @@
             this.tbLogin = new Telerik.WinControls.UI.RadTextBox();
             this.radLabel19 = new Telerik.WinControls.UI.RadLabel();
             this.pvCard = new Telerik.WinControls.UI.RadPageViewPage();
-            this.radButton7 = new Telerik.WinControls.UI.RadButton();
-            this.radDateTimePicker3 = new Telerik.WinControls.UI.RadDateTimePicker();
-            this.radLabel11 = new Telerik.WinControls.UI.RadLabel();
-            this.radGridView2 = new Telerik.WinControls.UI.RadGridView();
+            this.cbNCard = new Telerik.WinControls.UI.RadDropDownList();
+            this.showCard = new Telerik.WinControls.UI.RadButton();
+            this.dtTariffEnd = new Telerik.WinControls.UI.RadDateTimePicker();
+            this.lbDate2 = new Telerik.WinControls.UI.RadLabel();
+            this.GVBalanceCard = new Telerik.WinControls.UI.RadGridView();
             this.addCard = new Telerik.WinControls.UI.RadButton();
-            this.radLabel10 = new Telerik.WinControls.UI.RadLabel();
-            this.radLabel9 = new Telerik.WinControls.UI.RadLabel();
-            this.radButton5 = new Telerik.WinControls.UI.RadButton();
-            this.radDateTimePicker2 = new Telerik.WinControls.UI.RadDateTimePicker();
-            this.radLabel12 = new Telerik.WinControls.UI.RadLabel();
-            this.radRichTextEditor2 = new Telerik.WinControls.UI.RadRichTextEditor();
-            this.radLabel8 = new Telerik.WinControls.UI.RadLabel();
-            this.radTextBox4 = new Telerik.WinControls.UI.RadTextBox();
-            this.radLabel7 = new Telerik.WinControls.UI.RadLabel();
-            this.radMultiColumnComboBox2 = new Telerik.WinControls.UI.RadMultiColumnComboBox();
+            this.lbService = new Telerik.WinControls.UI.RadLabel();
+            this.lbDate1 = new Telerik.WinControls.UI.RadLabel();
+            this.dtDateOfCreation = new Telerik.WinControls.UI.RadDateTimePicker();
+            this.lbTariff = new Telerik.WinControls.UI.RadLabel();
+            this.tbTariff = new Telerik.WinControls.UI.RadTextBox();
+            this.lbNCard = new Telerik.WinControls.UI.RadLabel();
             this.pvPay = new Telerik.WinControls.UI.RadPageViewPage();
             this.radButton6 = new Telerik.WinControls.UI.RadButton();
             this.addPay = new Telerik.WinControls.UI.RadButton();
@@ -96,19 +93,19 @@
             this.radLabel18 = new Telerik.WinControls.UI.RadLabel();
             this.radGridView1 = new Telerik.WinControls.UI.RadGridView();
             this.pvHealth = new Telerik.WinControls.UI.RadPageViewPage();
+            this.radLabel20 = new Telerik.WinControls.UI.RadLabel();
+            this.radLabel6 = new Telerik.WinControls.UI.RadLabel();
             this.spWeight = new Telerik.WinControls.UI.RadSpinEditor();
             this.spHeight = new Telerik.WinControls.UI.RadSpinEditor();
-            this.radButton4 = new Telerik.WinControls.UI.RadButton();
+            this.saveHealth = new Telerik.WinControls.UI.RadButton();
             this.radLabel16 = new Telerik.WinControls.UI.RadLabel();
             this.tbHealth = new Telerik.WinControls.UI.RadRichTextEditor();
             this.radLabel14 = new Telerik.WinControls.UI.RadLabel();
             this.radLabel13 = new Telerik.WinControls.UI.RadLabel();
-            this.radColorDialog1 = new Telerik.WinControls.RadColorDialog();
             this.error = new System.Windows.Forms.ErrorProvider(this.components);
-            this.radLabel6 = new Telerik.WinControls.UI.RadLabel();
-            this.radLabel20 = new Telerik.WinControls.UI.RadLabel();
-            ((System.ComponentModel.ISupportInitialize)(this.PWClient)).BeginInit();
-            this.PWClient.SuspendLayout();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            ((System.ComponentModel.ISupportInitialize)(this.PVClients)).BeginInit();
+            this.PVClients.SuspendLayout();
             this.pvClient.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbEmail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Email)).BeginInit();
@@ -121,7 +118,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnSave)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbComment)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAddPhoto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbMiddleName)).BeginInit();
@@ -143,24 +140,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.tbLogin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel19)).BeginInit();
             this.pvCard.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radDateTimePicker3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridView2.MasterTemplate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbNCard)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.showCard)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtTariffEnd)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lbDate2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GVBalanceCard)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GVBalanceCard.MasterTemplate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.addCard)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radDateTimePicker2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radRichTextEditor2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radTextBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radMultiColumnComboBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radMultiColumnComboBox2.EditorControl)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radMultiColumnComboBox2.EditorControl.MasterTemplate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lbService)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lbDate1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtDateOfCreation)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lbTariff)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbTariff)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lbNCard)).BeginInit();
             this.pvPay.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radButton6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.addPay)).BeginInit();
@@ -169,37 +161,37 @@
             ((System.ComponentModel.ISupportInitialize)(this.radGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGridView1.MasterTemplate)).BeginInit();
             this.pvHealth.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spWeight)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spHeight)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.saveHealth)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbHealth)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.error)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
-            // PWClient
+            // PVClients
             // 
-            this.PWClient.Controls.Add(this.pvClient);
-            this.PWClient.Controls.Add(this.pvLogin);
-            this.PWClient.Controls.Add(this.pvCard);
-            this.PWClient.Controls.Add(this.pvPay);
-            this.PWClient.Controls.Add(this.pvHealth);
-            this.PWClient.DefaultPage = this.pvClient;
-            this.PWClient.Location = new System.Drawing.Point(12, 12);
-            this.PWClient.Name = "PWClient";
-            this.PWClient.SelectedPage = this.pvLogin;
-            this.PWClient.Size = new System.Drawing.Size(417, 485);
-            this.PWClient.TabIndex = 0;
-            this.PWClient.SelectedPageChanged += new System.EventHandler(this.PWClient_SelectedPageChanged);
-            ((Telerik.WinControls.UI.RadPageViewStripElement)(this.PWClient.GetChildAt(0))).StripButtons = Telerik.WinControls.UI.StripViewButtons.None;
-            ((Telerik.WinControls.UI.RadPageViewStripElement)(this.PWClient.GetChildAt(0))).ItemAlignment = Telerik.WinControls.UI.StripViewItemAlignment.Near;
-            ((Telerik.WinControls.UI.RadPageViewStripElement)(this.PWClient.GetChildAt(0))).ItemFitMode = Telerik.WinControls.UI.StripViewItemFitMode.None;
-            ((Telerik.WinControls.UI.RadPageViewStripElement)(this.PWClient.GetChildAt(0))).StripAlignment = Telerik.WinControls.UI.StripViewAlignment.Top;
+            this.PVClients.Controls.Add(this.pvClient);
+            this.PVClients.Controls.Add(this.pvLogin);
+            this.PVClients.Controls.Add(this.pvCard);
+            this.PVClients.Controls.Add(this.pvPay);
+            this.PVClients.Controls.Add(this.pvHealth);
+            this.PVClients.DefaultPage = this.pvClient;
+            this.PVClients.Location = new System.Drawing.Point(12, 12);
+            this.PVClients.Name = "PVClients";
+            this.PVClients.SelectedPage = this.pvHealth;
+            this.PVClients.Size = new System.Drawing.Size(417, 485);
+            this.PVClients.TabIndex = 0;
+            this.PVClients.SelectedPageChanged += new System.EventHandler(this.PVClients_SelectedPageChanged);
+            ((Telerik.WinControls.UI.RadPageViewStripElement)(this.PVClients.GetChildAt(0))).StripButtons = Telerik.WinControls.UI.StripViewButtons.None;
+            ((Telerik.WinControls.UI.RadPageViewStripElement)(this.PVClients.GetChildAt(0))).ItemAlignment = Telerik.WinControls.UI.StripViewItemAlignment.Near;
+            ((Telerik.WinControls.UI.RadPageViewStripElement)(this.PVClients.GetChildAt(0))).ItemFitMode = Telerik.WinControls.UI.StripViewItemFitMode.None;
+            ((Telerik.WinControls.UI.RadPageViewStripElement)(this.PVClients.GetChildAt(0))).StripAlignment = Telerik.WinControls.UI.StripViewAlignment.Top;
             // 
             // pvClient
             // 
@@ -214,7 +206,7 @@
             this.pvClient.Controls.Add(this.btnSave);
             this.pvClient.Controls.Add(this.radLabel5);
             this.pvClient.Controls.Add(this.tbComment);
-            this.pvClient.Controls.Add(this.radButton1);
+            this.pvClient.Controls.Add(this.btnAddPhoto);
             this.pvClient.Controls.Add(this.pictureBox1);
             this.pvClient.Controls.Add(this.radLabel4);
             this.pvClient.Controls.Add(this.tbMiddleName);
@@ -321,13 +313,14 @@
             this.tbComment.Size = new System.Drawing.Size(390, 80);
             this.tbComment.TabIndex = 7;
             // 
-            // radButton1
+            // btnAddPhoto
             // 
-            this.radButton1.Location = new System.Drawing.Point(179, 203);
-            this.radButton1.Name = "radButton1";
-            this.radButton1.Size = new System.Drawing.Size(214, 24);
-            this.radButton1.TabIndex = 6;
-            this.radButton1.Text = "Загрузить фотографию";
+            this.btnAddPhoto.Location = new System.Drawing.Point(179, 203);
+            this.btnAddPhoto.Name = "btnAddPhoto";
+            this.btnAddPhoto.Size = new System.Drawing.Size(214, 24);
+            this.btnAddPhoto.TabIndex = 6;
+            this.btnAddPhoto.Text = "Загрузить фотографию";
+            this.btnAddPhoto.Click += new System.EventHandler(this.btnAddPhoto_Click);
             // 
             // pictureBox1
             // 
@@ -505,72 +498,89 @@
             // 
             // pvCard
             // 
-            this.pvCard.Controls.Add(this.radButton7);
-            this.pvCard.Controls.Add(this.radDateTimePicker3);
-            this.pvCard.Controls.Add(this.radLabel11);
-            this.pvCard.Controls.Add(this.radGridView2);
+            this.pvCard.Controls.Add(this.cbNCard);
+            this.pvCard.Controls.Add(this.showCard);
+            this.pvCard.Controls.Add(this.dtTariffEnd);
+            this.pvCard.Controls.Add(this.lbDate2);
+            this.pvCard.Controls.Add(this.GVBalanceCard);
             this.pvCard.Controls.Add(this.addCard);
-            this.pvCard.Controls.Add(this.radLabel10);
-            this.pvCard.Controls.Add(this.radLabel9);
-            this.pvCard.Controls.Add(this.radButton5);
-            this.pvCard.Controls.Add(this.radDateTimePicker2);
-            this.pvCard.Controls.Add(this.radLabel12);
-            this.pvCard.Controls.Add(this.radRichTextEditor2);
-            this.pvCard.Controls.Add(this.radLabel8);
-            this.pvCard.Controls.Add(this.radTextBox4);
-            this.pvCard.Controls.Add(this.radLabel7);
-            this.pvCard.Controls.Add(this.radMultiColumnComboBox2);
+            this.pvCard.Controls.Add(this.lbService);
+            this.pvCard.Controls.Add(this.lbDate1);
+            this.pvCard.Controls.Add(this.dtDateOfCreation);
+            this.pvCard.Controls.Add(this.lbTariff);
+            this.pvCard.Controls.Add(this.tbTariff);
+            this.pvCard.Controls.Add(this.lbNCard);
             this.pvCard.ItemSize = new System.Drawing.SizeF(92F, 28F);
             this.pvCard.Location = new System.Drawing.Point(10, 37);
             this.pvCard.Name = "pvCard";
             this.pvCard.Size = new System.Drawing.Size(396, 437);
             this.pvCard.Text = "Карты клиента";
             // 
-            // radButton7
+            // cbNCard
             // 
-            this.radButton7.Location = new System.Drawing.Point(147, 405);
-            this.radButton7.Name = "radButton7";
-            this.radButton7.Size = new System.Drawing.Size(101, 24);
-            this.radButton7.TabIndex = 14;
-            this.radButton7.Text = "Посмотреть карту";
+            this.cbNCard.DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDownList;
+            this.cbNCard.Location = new System.Drawing.Point(4, 27);
+            this.cbNCard.Name = "cbNCard";
+            this.cbNCard.Size = new System.Drawing.Size(164, 20);
+            this.cbNCard.TabIndex = 16;
+            this.cbNCard.Text = "radDropDownList1";
+            this.cbNCard.SelectedIndexChanged += new Telerik.WinControls.UI.Data.PositionChangedEventHandler(this.cbNCard_SelectedIndexChanged);
             // 
-            // radDateTimePicker3
+            // showCard
             // 
-            this.radDateTimePicker3.Enabled = false;
-            this.radDateTimePicker3.Location = new System.Drawing.Point(229, 77);
-            this.radDateTimePicker3.Name = "radDateTimePicker3";
-            this.radDateTimePicker3.Size = new System.Drawing.Size(164, 20);
-            this.radDateTimePicker3.TabIndex = 2;
-            this.radDateTimePicker3.TabStop = false;
-            this.radDateTimePicker3.Text = "28 октября 2018 г.";
-            this.radDateTimePicker3.Value = new System.DateTime(2018, 10, 28, 17, 37, 22, 682);
+            this.showCard.Location = new System.Drawing.Point(147, 405);
+            this.showCard.Name = "showCard";
+            this.showCard.Size = new System.Drawing.Size(101, 24);
+            this.showCard.TabIndex = 14;
+            this.showCard.Text = "Посмотреть карту";
+            this.showCard.Click += new System.EventHandler(this.showCard_Click);
             // 
-            // radLabel11
+            // dtTariffEnd
             // 
-            this.radLabel11.Location = new System.Drawing.Point(229, 53);
-            this.radLabel11.Name = "radLabel11";
-            this.radLabel11.Size = new System.Drawing.Size(128, 18);
-            this.radLabel11.TabIndex = 4;
-            this.radLabel11.Text = "Тариф действителен до";
+            this.dtTariffEnd.Enabled = false;
+            this.dtTariffEnd.Location = new System.Drawing.Point(229, 77);
+            this.dtTariffEnd.Name = "dtTariffEnd";
+            this.dtTariffEnd.Size = new System.Drawing.Size(164, 20);
+            this.dtTariffEnd.TabIndex = 2;
+            this.dtTariffEnd.TabStop = false;
+            this.dtTariffEnd.Text = "28 октября 2018 г.";
+            this.dtTariffEnd.Value = new System.DateTime(2018, 10, 28, 17, 37, 22, 682);
             // 
-            // radGridView2
+            // lbDate2
             // 
-            this.radGridView2.Location = new System.Drawing.Point(3, 127);
+            this.lbDate2.Location = new System.Drawing.Point(229, 53);
+            this.lbDate2.Name = "lbDate2";
+            this.lbDate2.Size = new System.Drawing.Size(128, 18);
+            this.lbDate2.TabIndex = 4;
+            this.lbDate2.Text = "Тариф действителен до";
+            // 
+            // GVBalanceCard
+            // 
+            this.GVBalanceCard.Location = new System.Drawing.Point(3, 127);
             // 
             // 
             // 
-            gridViewTextBoxColumn19.HeaderText = "Услуга";
-            gridViewTextBoxColumn19.Name = "column1";
-            gridViewTextBoxColumn19.Width = 320;
-            gridViewTextBoxColumn20.HeaderText = "Кол-во";
-            gridViewTextBoxColumn20.Name = "column2";
-            this.radGridView2.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewTextBoxColumn19,
-            gridViewTextBoxColumn20});
-            this.radGridView2.MasterTemplate.ViewDefinition = tableViewDefinition10;
-            this.radGridView2.Name = "radGridView2";
-            this.radGridView2.Size = new System.Drawing.Size(390, 178);
-            this.radGridView2.TabIndex = 15;
+            this.GVBalanceCard.MasterTemplate.AllowAddNewRow = false;
+            gridViewDecimalColumn1.HeaderText = "ID";
+            gridViewDecimalColumn1.Name = "column3";
+            gridViewDecimalColumn1.Width = 30;
+            gridViewTextBoxColumn1.HeaderText = "Услуга";
+            gridViewTextBoxColumn1.Name = "column1";
+            gridViewTextBoxColumn1.Width = 290;
+            gridViewTextBoxColumn2.HeaderText = "Кол-во";
+            gridViewTextBoxColumn2.Name = "column2";
+            gridViewTextBoxColumn3.HeaderText = "След.посещ.через";
+            gridViewTextBoxColumn3.Name = "column4";
+            this.GVBalanceCard.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
+            gridViewDecimalColumn1,
+            gridViewTextBoxColumn1,
+            gridViewTextBoxColumn2,
+            gridViewTextBoxColumn3});
+            this.GVBalanceCard.MasterTemplate.ViewDefinition = tableViewDefinition1;
+            this.GVBalanceCard.Name = "GVBalanceCard";
+            this.GVBalanceCard.ReadOnly = true;
+            this.GVBalanceCard.Size = new System.Drawing.Size(390, 272);
+            this.GVBalanceCard.TabIndex = 15;
             // 
             // addCard
             // 
@@ -581,111 +591,56 @@
             this.addCard.Text = "Добавить карту";
             this.addCard.Click += new System.EventHandler(this.addCard_Click);
             // 
-            // radLabel10
+            // lbService
             // 
-            this.radLabel10.Location = new System.Drawing.Point(3, 103);
-            this.radLabel10.Name = "radLabel10";
-            this.radLabel10.Size = new System.Drawing.Size(77, 18);
-            this.radLabel10.TabIndex = 3;
-            this.radLabel10.Text = "Остаток услуг";
+            this.lbService.Location = new System.Drawing.Point(3, 103);
+            this.lbService.Name = "lbService";
+            this.lbService.Size = new System.Drawing.Size(77, 18);
+            this.lbService.TabIndex = 3;
+            this.lbService.Text = "Остаток услуг";
             // 
-            // radLabel9
+            // lbDate1
             // 
-            this.radLabel9.Location = new System.Drawing.Point(4, 53);
-            this.radLabel9.Name = "radLabel9";
-            this.radLabel9.Size = new System.Drawing.Size(72, 18);
-            this.radLabel9.TabIndex = 3;
-            this.radLabel9.Text = "Дата выдачи";
+            this.lbDate1.Location = new System.Drawing.Point(4, 53);
+            this.lbDate1.Name = "lbDate1";
+            this.lbDate1.Size = new System.Drawing.Size(72, 18);
+            this.lbDate1.TabIndex = 3;
+            this.lbDate1.Text = "Дата выдачи";
             // 
-            // radButton5
+            // dtDateOfCreation
             // 
-            this.radButton5.Location = new System.Drawing.Point(293, 405);
-            this.radButton5.Name = "radButton5";
-            this.radButton5.Size = new System.Drawing.Size(101, 24);
-            this.radButton5.TabIndex = 13;
-            this.radButton5.Text = "Сохранить";
+            this.dtDateOfCreation.Enabled = false;
+            this.dtDateOfCreation.Location = new System.Drawing.Point(4, 77);
+            this.dtDateOfCreation.Name = "dtDateOfCreation";
+            this.dtDateOfCreation.Size = new System.Drawing.Size(164, 20);
+            this.dtDateOfCreation.TabIndex = 1;
+            this.dtDateOfCreation.TabStop = false;
+            this.dtDateOfCreation.Text = "28 октября 2018 г.";
+            this.dtDateOfCreation.Value = new System.DateTime(2018, 10, 28, 17, 37, 22, 682);
             // 
-            // radDateTimePicker2
+            // lbTariff
             // 
-            this.radDateTimePicker2.Enabled = false;
-            this.radDateTimePicker2.Location = new System.Drawing.Point(4, 77);
-            this.radDateTimePicker2.Name = "radDateTimePicker2";
-            this.radDateTimePicker2.Size = new System.Drawing.Size(164, 20);
-            this.radDateTimePicker2.TabIndex = 1;
-            this.radDateTimePicker2.TabStop = false;
-            this.radDateTimePicker2.Text = "28 октября 2018 г.";
-            this.radDateTimePicker2.Value = new System.DateTime(2018, 10, 28, 17, 37, 22, 682);
+            this.lbTariff.Location = new System.Drawing.Point(229, 3);
+            this.lbTariff.Name = "lbTariff";
+            this.lbTariff.Size = new System.Drawing.Size(39, 18);
+            this.lbTariff.TabIndex = 3;
+            this.lbTariff.Text = "Тариф";
             // 
-            // radLabel12
+            // tbTariff
             // 
-            this.radLabel12.Location = new System.Drawing.Point(4, 311);
-            this.radLabel12.Name = "radLabel12";
-            this.radLabel12.Size = new System.Drawing.Size(78, 18);
-            this.radLabel12.TabIndex = 8;
-            this.radLabel12.Text = "Комментарий";
+            this.tbTariff.Enabled = false;
+            this.tbTariff.Location = new System.Drawing.Point(229, 27);
+            this.tbTariff.Name = "tbTariff";
+            this.tbTariff.Size = new System.Drawing.Size(164, 20);
+            this.tbTariff.TabIndex = 3;
             // 
-            // radRichTextEditor2
+            // lbNCard
             // 
-            this.radRichTextEditor2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(189)))), ((int)(((byte)(232)))));
-            this.radRichTextEditor2.Location = new System.Drawing.Point(4, 335);
-            this.radRichTextEditor2.Name = "radRichTextEditor2";
-            this.radRichTextEditor2.SelectionFill = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(78)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.radRichTextEditor2.Size = new System.Drawing.Size(390, 64);
-            this.radRichTextEditor2.TabIndex = 9;
-            // 
-            // radLabel8
-            // 
-            this.radLabel8.Location = new System.Drawing.Point(229, 3);
-            this.radLabel8.Name = "radLabel8";
-            this.radLabel8.Size = new System.Drawing.Size(39, 18);
-            this.radLabel8.TabIndex = 3;
-            this.radLabel8.Text = "Тариф";
-            // 
-            // radTextBox4
-            // 
-            this.radTextBox4.Enabled = false;
-            this.radTextBox4.Location = new System.Drawing.Point(229, 27);
-            this.radTextBox4.Name = "radTextBox4";
-            this.radTextBox4.Size = new System.Drawing.Size(164, 20);
-            this.radTextBox4.TabIndex = 3;
-            // 
-            // radLabel7
-            // 
-            this.radLabel7.Location = new System.Drawing.Point(3, 3);
-            this.radLabel7.Name = "radLabel7";
-            this.radLabel7.Size = new System.Drawing.Size(119, 18);
-            this.radLabel7.TabIndex = 2;
-            this.radLabel7.Text = "Номер карты клиента";
-            // 
-            // radMultiColumnComboBox2
-            // 
-            // 
-            // radMultiColumnComboBox2.NestedRadGridView
-            // 
-            this.radMultiColumnComboBox2.EditorControl.BackColor = System.Drawing.SystemColors.Window;
-            this.radMultiColumnComboBox2.EditorControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radMultiColumnComboBox2.EditorControl.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.radMultiColumnComboBox2.EditorControl.Location = new System.Drawing.Point(0, 0);
-            // 
-            // 
-            // 
-            this.radMultiColumnComboBox2.EditorControl.MasterTemplate.AllowAddNewRow = false;
-            this.radMultiColumnComboBox2.EditorControl.MasterTemplate.AllowCellContextMenu = false;
-            this.radMultiColumnComboBox2.EditorControl.MasterTemplate.AllowColumnChooser = false;
-            this.radMultiColumnComboBox2.EditorControl.MasterTemplate.EnableGrouping = false;
-            this.radMultiColumnComboBox2.EditorControl.MasterTemplate.ShowFilteringRow = false;
-            this.radMultiColumnComboBox2.EditorControl.MasterTemplate.ViewDefinition = tableViewDefinition11;
-            this.radMultiColumnComboBox2.EditorControl.Name = "NestedRadGridView";
-            this.radMultiColumnComboBox2.EditorControl.ReadOnly = true;
-            this.radMultiColumnComboBox2.EditorControl.ShowGroupPanel = false;
-            this.radMultiColumnComboBox2.EditorControl.Size = new System.Drawing.Size(240, 150);
-            this.radMultiColumnComboBox2.EditorControl.TabIndex = 0;
-            this.radMultiColumnComboBox2.Location = new System.Drawing.Point(3, 27);
-            this.radMultiColumnComboBox2.Name = "radMultiColumnComboBox2";
-            this.radMultiColumnComboBox2.Size = new System.Drawing.Size(164, 20);
-            this.radMultiColumnComboBox2.TabIndex = 0;
-            this.radMultiColumnComboBox2.TabStop = false;
-            this.radMultiColumnComboBox2.Text = "radMultiColumnComboBox2";
+            this.lbNCard.Location = new System.Drawing.Point(3, 3);
+            this.lbNCard.Name = "lbNCard";
+            this.lbNCard.Size = new System.Drawing.Size(119, 18);
+            this.lbNCard.TabIndex = 2;
+            this.lbNCard.Text = "Номер карты клиента";
             // 
             // pvPay
             // 
@@ -739,24 +694,24 @@
             // 
             // 
             // 
-            gridViewTextBoxColumn21.HeaderText = "Дата";
-            gridViewTextBoxColumn21.Name = "column1";
-            gridViewTextBoxColumn21.Width = 75;
-            gridViewTextBoxColumn22.HeaderText = "Услуга";
-            gridViewTextBoxColumn22.Name = "column2";
-            gridViewTextBoxColumn22.Width = 155;
-            gridViewTextBoxColumn23.HeaderText = "Сумма";
-            gridViewTextBoxColumn23.Name = "column3";
-            gridViewTextBoxColumn23.Width = 70;
-            gridViewTextBoxColumn24.HeaderText = "Оплачено";
-            gridViewTextBoxColumn24.Name = "column4";
-            gridViewTextBoxColumn24.Width = 70;
+            gridViewTextBoxColumn4.HeaderText = "Дата";
+            gridViewTextBoxColumn4.Name = "column1";
+            gridViewTextBoxColumn4.Width = 75;
+            gridViewTextBoxColumn5.HeaderText = "Услуга";
+            gridViewTextBoxColumn5.Name = "column2";
+            gridViewTextBoxColumn5.Width = 155;
+            gridViewTextBoxColumn6.HeaderText = "Сумма";
+            gridViewTextBoxColumn6.Name = "column3";
+            gridViewTextBoxColumn6.Width = 70;
+            gridViewTextBoxColumn7.HeaderText = "Оплачено";
+            gridViewTextBoxColumn7.Name = "column4";
+            gridViewTextBoxColumn7.Width = 70;
             this.radGridView1.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewTextBoxColumn21,
-            gridViewTextBoxColumn22,
-            gridViewTextBoxColumn23,
-            gridViewTextBoxColumn24});
-            this.radGridView1.MasterTemplate.ViewDefinition = tableViewDefinition12;
+            gridViewTextBoxColumn4,
+            gridViewTextBoxColumn5,
+            gridViewTextBoxColumn6,
+            gridViewTextBoxColumn7});
+            this.radGridView1.MasterTemplate.ViewDefinition = tableViewDefinition2;
             this.radGridView1.Name = "radGridView1";
             this.radGridView1.Size = new System.Drawing.Size(390, 377);
             this.radGridView1.TabIndex = 0;
@@ -767,7 +722,7 @@
             this.pvHealth.Controls.Add(this.radLabel6);
             this.pvHealth.Controls.Add(this.spWeight);
             this.pvHealth.Controls.Add(this.spHeight);
-            this.pvHealth.Controls.Add(this.radButton4);
+            this.pvHealth.Controls.Add(this.saveHealth);
             this.pvHealth.Controls.Add(this.radLabel16);
             this.pvHealth.Controls.Add(this.tbHealth);
             this.pvHealth.Controls.Add(this.radLabel14);
@@ -777,6 +732,22 @@
             this.pvHealth.Name = "pvHealth";
             this.pvHealth.Size = new System.Drawing.Size(396, 437);
             this.pvHealth.Text = "Физиология";
+            // 
+            // radLabel20
+            // 
+            this.radLabel20.Location = new System.Drawing.Point(215, 28);
+            this.radLabel20.Name = "radLabel20";
+            this.radLabel20.Size = new System.Drawing.Size(16, 18);
+            this.radLabel20.TabIndex = 16;
+            this.radLabel20.Text = "кг";
+            // 
+            // radLabel6
+            // 
+            this.radLabel6.Location = new System.Drawing.Point(90, 28);
+            this.radLabel6.Name = "radLabel6";
+            this.radLabel6.Size = new System.Drawing.Size(19, 18);
+            this.radLabel6.TabIndex = 15;
+            this.radLabel6.Text = "см";
             // 
             // spWeight
             // 
@@ -794,13 +765,14 @@
             this.spHeight.TabIndex = 13;
             this.spHeight.TabStop = false;
             // 
-            // radButton4
+            // saveHealth
             // 
-            this.radButton4.Location = new System.Drawing.Point(292, 410);
-            this.radButton4.Name = "radButton4";
-            this.radButton4.Size = new System.Drawing.Size(101, 24);
-            this.radButton4.TabIndex = 12;
-            this.radButton4.Text = "Сохранить";
+            this.saveHealth.Location = new System.Drawing.Point(292, 410);
+            this.saveHealth.Name = "saveHealth";
+            this.saveHealth.Size = new System.Drawing.Size(101, 24);
+            this.saveHealth.TabIndex = 12;
+            this.saveHealth.Text = "Сохранить";
+            this.saveHealth.Click += new System.EventHandler(this.saveHealth_Click);
             // 
             // radLabel16
             // 
@@ -835,39 +807,20 @@
             this.radLabel13.TabIndex = 4;
             this.radLabel13.Text = "Рост";
             // 
-            // radColorDialog1
-            // 
-            this.radColorDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("radColorDialog1.Icon")));
-            this.radColorDialog1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.radColorDialog1.SelectedColor = System.Drawing.Color.Red;
-            this.radColorDialog1.SelectedHslColor = Telerik.WinControls.HslColor.FromAhsl(0D, 1D, 1D);
-            // 
             // error
             // 
             this.error.ContainerControl = this;
             // 
-            // radLabel6
+            // openFileDialog1
             // 
-            this.radLabel6.Location = new System.Drawing.Point(90, 28);
-            this.radLabel6.Name = "radLabel6";
-            this.radLabel6.Size = new System.Drawing.Size(19, 18);
-            this.radLabel6.TabIndex = 15;
-            this.radLabel6.Text = "см";
-            // 
-            // radLabel20
-            // 
-            this.radLabel20.Location = new System.Drawing.Point(215, 28);
-            this.radLabel20.Name = "radLabel20";
-            this.radLabel20.Size = new System.Drawing.Size(16, 18);
-            this.radLabel20.TabIndex = 16;
-            this.radLabel20.Text = "кг";
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // ClientCard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(436, 509);
-            this.Controls.Add(this.PWClient);
+            this.Controls.Add(this.PVClients);
             this.Name = "ClientCard";
             // 
             // 
@@ -876,8 +829,8 @@
             this.Text = "Карточка клиента";
             this.Load += new System.EventHandler(this.ClientCard_Load);
             this.Shown += new System.EventHandler(this.ClientCard_Shown);
-            ((System.ComponentModel.ISupportInitialize)(this.PWClient)).EndInit();
-            this.PWClient.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PVClients)).EndInit();
+            this.PVClients.ResumeLayout(false);
             this.pvClient.ResumeLayout(false);
             this.pvClient.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbEmail)).EndInit();
@@ -891,7 +844,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnSave)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbComment)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAddPhoto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbMiddleName)).EndInit();
@@ -915,24 +868,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.radLabel19)).EndInit();
             this.pvCard.ResumeLayout(false);
             this.pvCard.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radDateTimePicker3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridView2.MasterTemplate)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbNCard)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.showCard)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtTariffEnd)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lbDate2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GVBalanceCard.MasterTemplate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GVBalanceCard)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.addCard)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radDateTimePicker2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radRichTextEditor2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radTextBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radMultiColumnComboBox2.EditorControl.MasterTemplate)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radMultiColumnComboBox2.EditorControl)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radMultiColumnComboBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lbService)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lbDate1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtDateOfCreation)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lbTariff)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbTariff)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lbNCard)).EndInit();
             this.pvPay.ResumeLayout(false);
             this.pvPay.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radButton6)).EndInit();
@@ -943,16 +891,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.radGridView1)).EndInit();
             this.pvHealth.ResumeLayout(false);
             this.pvHealth.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spWeight)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spHeight)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.saveHealth)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbHealth)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.error)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
 
@@ -960,7 +908,7 @@
 
         #endregion
 
-        private Telerik.WinControls.UI.RadPageView PWClient;
+        private Telerik.WinControls.UI.RadPageView PVClients;
         private Telerik.WinControls.UI.RadPageViewPage pvClient;
         private Telerik.WinControls.UI.RadTextBox tbMiddleName;
         private Telerik.WinControls.UI.RadLabel radLabel3;
@@ -975,35 +923,31 @@
         private Telerik.WinControls.UI.RadButton btnSave;
         private Telerik.WinControls.UI.RadLabel radLabel5;
         private Telerik.WinControls.UI.RadRichTextEditor tbComment;
-        private Telerik.WinControls.UI.RadButton radButton1;
+        private Telerik.WinControls.UI.RadButton btnAddPhoto;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Telerik.WinControls.UI.RadLabel radLabel4;
-        private Telerik.WinControls.UI.RadLabel radLabel10;
-        private Telerik.WinControls.UI.RadLabel radLabel9;
-        private Telerik.WinControls.UI.RadLabel radLabel8;
-        private Telerik.WinControls.UI.RadTextBox radTextBox4;
-        private Telerik.WinControls.UI.RadLabel radLabel7;
-        private Telerik.WinControls.UI.RadDateTimePicker radDateTimePicker2;
-        private Telerik.WinControls.UI.RadMultiColumnComboBox radMultiColumnComboBox2;
-        private Telerik.WinControls.UI.RadLabel radLabel12;
-        private Telerik.WinControls.UI.RadRichTextEditor radRichTextEditor2;
-        private Telerik.WinControls.UI.RadButton radButton4;
+        private Telerik.WinControls.UI.RadLabel lbService;
+        private Telerik.WinControls.UI.RadLabel lbDate1;
+        private Telerik.WinControls.UI.RadLabel lbTariff;
+        private Telerik.WinControls.UI.RadTextBox tbTariff;
+        private Telerik.WinControls.UI.RadLabel lbNCard;
+        private Telerik.WinControls.UI.RadDateTimePicker dtDateOfCreation;
+        private Telerik.WinControls.UI.RadButton saveHealth;
         private Telerik.WinControls.UI.RadLabel radLabel16;
         private Telerik.WinControls.UI.RadRichTextEditor tbHealth;
         private Telerik.WinControls.UI.RadLabel radLabel14;
         private Telerik.WinControls.UI.RadLabel radLabel13;
         private Telerik.WinControls.UI.RadButton addCard;
-        private Telerik.WinControls.UI.RadButton radButton5;
         private Telerik.WinControls.UI.RadPageViewPage pvPay;
         private Telerik.WinControls.UI.RadButton addPay;
         private Telerik.WinControls.UI.RadTextBox radTextBox9;
         private Telerik.WinControls.UI.RadLabel radLabel18;
         private Telerik.WinControls.UI.RadGridView radGridView1;
-        private Telerik.WinControls.UI.RadGridView radGridView2;
+        private Telerik.WinControls.UI.RadGridView GVBalanceCard;
         private Telerik.WinControls.UI.RadButton radButton6;
-        private Telerik.WinControls.UI.RadDateTimePicker radDateTimePicker3;
-        private Telerik.WinControls.UI.RadLabel radLabel11;
-        private Telerik.WinControls.UI.RadButton radButton7;
+        private Telerik.WinControls.UI.RadDateTimePicker dtTariffEnd;
+        private Telerik.WinControls.UI.RadLabel lbDate2;
+        private Telerik.WinControls.UI.RadButton showCard;
         private Telerik.WinControls.UI.RadLabel radLabel15;
         private Telerik.WinControls.UI.RadRadioButton sexW;
         private Telerik.WinControls.UI.RadRadioButton sexM;
@@ -1020,7 +964,6 @@
         private Telerik.WinControls.UI.RadPageViewPage pvLogin;
         private Telerik.WinControls.UI.RadLabel lblPassword1;
         private Telerik.WinControls.UI.RadDropDownList cbLogin;
-        private Telerik.WinControls.RadColorDialog radColorDialog1;
         private Telerik.WinControls.UI.RadLabel lblPassword2;
         private Telerik.WinControls.UI.RadTextBox tbPassword2;
         private Telerik.WinControls.UI.RadButton btnLogin;
@@ -1028,5 +971,7 @@
         private System.Windows.Forms.ErrorProvider error;
         private Telerik.WinControls.UI.RadLabel radLabel20;
         private Telerik.WinControls.UI.RadLabel radLabel6;
+        private Telerik.WinControls.UI.RadDropDownList cbNCard;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }

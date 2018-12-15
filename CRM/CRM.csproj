@@ -257,6 +257,8 @@
     <Compile Include="Autorizatsiya.Designer.cs">
       <DependentUpon>Autorizatsiya.cs</DependentUpon>
     </Compile>
+    <Compile Include="BalanceCard.cs" />
+    <Compile Include="Card.cs" />
     <Compile Include="CardCard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -271,6 +273,14 @@
     <Compile Include="FreezeCard.Designer.cs">
       <DependentUpon>FreezeCard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Options.cs" />
+    <Compile Include="OptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OptionsForm.Designer.cs">
+      <DependentUpon>OptionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment.cs" />
     <Compile Include="Photo.cs" />
     <Compile Include="ReiterationSchedule.cs">
       <SubType>Form</SubType>
@@ -278,6 +288,7 @@
     <Compile Include="ReiterationSchedule.Designer.cs">
       <DependentUpon>ReiterationSchedule.cs</DependentUpon>
     </Compile>
+    <Compile Include="Room.cs" />
     <Compile Include="ScheduleCard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -290,6 +301,7 @@
     <Compile Include="ScheduleRoom.Designer.cs">
       <DependentUpon>ScheduleRoom.cs</DependentUpon>
     </Compile>
+    <Compile Include="ScheduleService.cs" />
     <Compile Include="SearchSchedule.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -392,11 +404,11 @@
     <Compile Include="SelectService.Designer.cs">
       <DependentUpon>SelectService.cs</DependentUpon>
     </Compile>
-    <Compile Include="SelectWorker.cs">
+    <Compile Include="SelectTrainer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SelectWorker.Designer.cs">
-      <DependentUpon>SelectWorker.cs</DependentUpon>
+    <Compile Include="SelectTrainer.Designer.cs">
+      <DependentUpon>SelectTrainer.cs</DependentUpon>
     </Compile>
     <Compile Include="Service.cs" />
     <Compile Include="ServiceCard.cs">
@@ -405,11 +417,13 @@
     <Compile Include="ServiceCard.Designer.cs">
       <DependentUpon>ServiceCard.cs</DependentUpon>
     </Compile>
-    <Compile Include="ServiceInTariff.cs">
+    <Compile Include="ServiceInRoom.cs" />
+    <Compile Include="ServiceInTariff.cs" />
+    <Compile Include="ServiceInTariffForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ServiceInTariff.Designer.cs">
-      <DependentUpon>ServiceInTariff.cs</DependentUpon>
+    <Compile Include="ServiceInTariffForm.Designer.cs">
+      <DependentUpon>ServiceInTariffForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Tariff.cs" />
     <Compile Include="TariffCard.cs">
@@ -425,6 +439,8 @@
       <DependentUpon>TariffTime.cs</DependentUpon>
     </Compile>
     <Compile Include="Trainer.cs" />
+    <Compile Include="TrainerInSchedule.cs" />
+    <Compile Include="TrainerService.cs" />
     <Compile Include="Us.cs" />
     <Compile Include="User.cs" />
     <Compile Include="TrainerCard.cs">
@@ -447,6 +463,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FreezeCard.resx">
       <DependentUpon>FreezeCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionsForm.resx">
+      <DependentUpon>OptionsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReiterationSchedule.resx">
       <DependentUpon>ReiterationSchedule.cs</DependentUpon>
@@ -520,14 +539,14 @@
     <EmbeddedResource Include="SelectService.resx">
       <DependentUpon>SelectService.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SelectWorker.resx">
-      <DependentUpon>SelectWorker.cs</DependentUpon>
+    <EmbeddedResource Include="SelectTrainer.resx">
+      <DependentUpon>SelectTrainer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ServiceCard.resx">
       <DependentUpon>ServiceCard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ServiceInTariff.resx">
-      <DependentUpon>ServiceInTariff.cs</DependentUpon>
+    <EmbeddedResource Include="ServiceInTariffForm.resx">
+      <DependentUpon>ServiceInTariffForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TariffCard.resx">
       <DependentUpon>TariffCard.cs</DependentUpon>

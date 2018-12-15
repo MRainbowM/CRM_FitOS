@@ -8,67 +8,86 @@ using System.Threading.Tasks;
 
 namespace CRM
 {
-    //[Table("User")]
+    [Table("Users")]
     public class Trainer : User
     {
 
-        private string Surname;
-        private string Name;
-        private string MiddleName;
-        private Int16 Sex;
-        private string Qualification;
-        private string Phone;
-        private DateTime DOB; //дата рождения
-        private string Comment;
-        //private List<Photo> Photo;
+        Trainer(User x)
+        {
+            ID = x.id;
+            surname = x.surname;
+            name = x.name;
+            middleName = x.middleName;
+            phone = x.phone;
+            sex = x.sex;
+            Login = x.login;
+            Password = x.password;
+            qualification = x.qualification;
+            Email = x.email;
+            dob = x.dob;
+            comment = x.comment;
+        }
+        public Trainer()
+        {
 
-        public string surname
-        {
-            get { return Surname; }
-            private set { Surname = value; }
         }
-        public string name
-        {
-            get { return Name; }
-            private set { Name = value; }
-        }
-        public string middleName
-        {
-            get { return MiddleName; }
-            private set { MiddleName = value; }
-        }
-        public Int16 sex
-        {
-            get { return Sex; }
-            private set { Sex = value; }
-        }
-        public string qualification
-        {
-            get { return Qualification; }
-            private set { Qualification = value; }
-        }
-        public string phone
-        {
-            get { return Phone; }
-            private set { Phone = value; }
-        }
-        public DateTime dob
-        {
-            get { return DOB; }
-            private set { DOB = value; }
-        }
-        public string comment
-        {
-            get { return Comment; }
-            private set { Comment = value; }
-        }
-        //////photo
-        
+        //private string Surname;
+        //private string Name;
+        //private string MiddleName;
+        //private Int16 Sex;
+        //private string Qualification;
+        //private string Phone;
+        //private DateTime DOB; //дата рождения
+        //private string Comment;
+        ////private List<Photo> Photo;
 
-        public void Add(string f, string i, string o, bool Sex,
+        //public string surname
+        //{
+        //    get { return Surname; }
+        //    private set { Surname = value; }
+        //}
+        //public string name
+        //{
+        //    get { return Name; }
+        //    private set { Name = value; }
+        //}
+        //public string middleName
+        //{
+        //    get { return MiddleName; }
+        //    private set { MiddleName = value; }
+        //}
+        //public Int16 sex
+        //{
+        //    get { return Sex; }
+        //    private set { Sex = value; }
+        //}
+        //public string qualification
+        //{
+        //    get { return Qualification; }
+        //    private set { Qualification = value; }
+        //}
+        //public string phone
+        //{
+        //    get { return Phone; }
+        //    private set { Phone = value; }
+        //}
+        //public DateTime dob
+        //{
+        //    get { return DOB; }
+        //    private set { DOB = value; }
+        //}
+        //public string comment
+        //{
+        //    get { return Comment; }
+        //    private set { Comment = value; }
+        //}
+        ////photo
+
+
+        public int Add(string f, string i, string o, bool Sex,
                        string Phone, string Qualification, string Email,
-                       DateTime DOB, string Comment, 
-                       string Login, string Password)
+                       DateTime DOB, string Comment,
+                               string Login, string Password)
         {
             using (ApplicationContext db = new ApplicationContext())
             {
@@ -77,21 +96,23 @@ namespace CRM
                 db.Database.EnsureCreated();
                 Trainer trainer = new Trainer
                 {
-                    Surname = f,
-                    Name = i,
-                    MiddleName = o,
-                    Sex = s,
-                    DOB = DOB,
-                    Phone = Phone,
-                    //StateUser = "Тренер",
-                    Comment = Comment,
-                    Qualification = Qualification,
+                    surname = f,
+                    name = i,
+                    middleName = o,
+                    sex = s,
+                    dob = DOB,
+                    phone = Phone,
+                    StateUser = "Trainer",
+                    comment = Comment,
+                    qualification = Qualification,
                     Email = Email,
                     Login = Login,
                     Password = Password
                 };
-                db.Trainers.Add(trainer);
+                db.Users.Add(trainer);
                 db.SaveChanges();
+                int ID_Trainer = trainer.id;
+                return ID_Trainer;
             }
         }
         public void Save(int ID_Trainer, string f, string i, string o, bool Sex,
@@ -104,27 +125,40 @@ namespace CRM
                 Int16 s = 0;
                 if (Sex) { s = 1; } // 1 - men, 0 - women
                 db.Database.EnsureCreated();
-                Trainer trainer = db.Trainers.Where(c => c.ID == ID_Trainer).FirstOrDefault();
-                trainer.Surname = f;
-                trainer.Name = i;
-                trainer.MiddleName = o;
-                trainer.Sex = s;
-                trainer.DOB = DOB;
-                trainer.Phone = Phone;
-                trainer.Comment = Comment;
-                trainer.Qualification = Qualification;
-                trainer.Email = Email;
-                trainer.Login = Login;
-                trainer.Password = Password;
+                //Trainer trainer = new Trainer(db.Users.Where(c => c.id == ID_Trainer).FirstOrDefault());
+                //trainer.surname = f;
+                //trainer.name = i;
+                //trainer.middleName = o;
+                //trainer.sex = s;
+                //trainer.dob = DOB;
+                //trainer.phone = Phone;
+                //trainer.comment = Comment;
+                //trainer.qualification = Qualification;
+                //trainer.Email = Email;
+                //trainer.Login = Login;
+                //trainer.Password = Password;
+
+                User user = db.Users.Where(c => c.id == ID_Trainer).FirstOrDefault();
+                user.surname = f;
+                user.name = i;
+                user.middleName = o;
+                user.sex = s;
+                user.dob = DOB;
+                user.phone = Phone;
+                user.comment = Comment;
+                user.qualification = Qualification;
+                user.email = Email;
+                user.login = Login;
+                user.password = Password;
 
                 db.SaveChanges();
             }
         }
 
-        public static Trainer FindClientByID(int ID_Trainer)
+        public static Trainer FindByID(int ID_Trainer)
         {
             ApplicationContext db = new ApplicationContext();
-            Trainer trainer = db.Trainers.Where(x => x.DateDelete == null && x.ID == ID_Trainer).FirstOrDefault();
+            Trainer trainer = new Trainer(db.Users.Where(x => x.id == ID_Trainer).FirstOrDefault());
             return trainer;
         }
 
@@ -132,25 +166,26 @@ namespace CRM
         {
             ApplicationContext db = new ApplicationContext();
 
-            List<Trainer> TrainerList = db.Trainers
-                    .Where(x => x.DateDelete == null)
-                    .Select(x => new Trainer
-                    {
-                        ID = x.ID,
-                        Surname = x.surname,
-                        Name = x.name,
-                        MiddleName = x.middleName,
-                        Phone = x.Phone,
-                        Sex = x.sex,
-                        Login = x.login,
-                        Password = x.password,
-                        Qualification = x.qualification,
-                        Email = x.email,
-                        DOB = x.dob,
-                        Comment = x.comment
-                    }).ToList();
+            List<Trainer> TrainerList = db.Users
+                    .Where(x => x.dateDelete == null && x.stateUser == "Trainer")
+                    .Select(x => new Trainer(x)
+                    ).ToList();
             return TrainerList;
         }
+
+
+        //public static void Del(int ID_Trainer)
+        //{
+        //    using (ApplicationContext db = new ApplicationContext())
+        //    {
+        //        db.Database.EnsureCreated();
+        //        Trainer trainer = FindTrainerByID(ID_Trainer);
+        //        //Client client = db.User.Where(c => c.ID == ID_Client).FirstOrDefault();
+        //        trainer.DateDelete = DateTime.Today.ToString();
+
+        //        db.SaveChanges();
+        //    }
+        //}
 
     }
 }

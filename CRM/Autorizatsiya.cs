@@ -19,8 +19,9 @@ namespace CRM
         private void enter_Click(object sender, EventArgs e)
         {
             RadForm1 radForm1 = new RadForm1();
-            radForm1.Show();
             this.Visible = false;
+            radForm1.ShowDialog();
+            this.Close();
         }
     }
 }

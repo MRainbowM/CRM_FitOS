@@ -29,12 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn16 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn17 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition9 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition7 = new Telerik.WinControls.UI.TableViewDefinition();
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn18 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn19 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn20 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition10 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition8 = new Telerik.WinControls.UI.TableViewDefinition();
             this.PVTrainer = new Telerik.WinControls.UI.RadPageView();
             this.pvWorker = new Telerik.WinControls.UI.RadPageViewPage();
             this.tbEmail = new Telerik.WinControls.UI.RadTextBox();
@@ -46,11 +47,11 @@
             this.tbPhone = new Telerik.WinControls.UI.RadTextBox();
             this.radLabel7 = new Telerik.WinControls.UI.RadLabel();
             this.tbQualification = new Telerik.WinControls.UI.RadRichTextEditor();
-            this.radButton3 = new Telerik.WinControls.UI.RadButton();
+            this.btnDelete = new Telerik.WinControls.UI.RadButton();
             this.btnSave = new Telerik.WinControls.UI.RadButton();
             this.radLabel5 = new Telerik.WinControls.UI.RadLabel();
             this.tbComment = new Telerik.WinControls.UI.RadRichTextEditor();
-            this.radButton1 = new Telerik.WinControls.UI.RadButton();
+            this.btnAddPhoto = new Telerik.WinControls.UI.RadButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.radLabel4 = new Telerik.WinControls.UI.RadLabel();
             this.tbMiddleName = new Telerik.WinControls.UI.RadTextBox();
@@ -71,15 +72,16 @@
             this.lblPassword1 = new Telerik.WinControls.UI.RadLabel();
             this.tbLogin = new Telerik.WinControls.UI.RadTextBox();
             this.radLabel19 = new Telerik.WinControls.UI.RadLabel();
-            this.pveServices = new Telerik.WinControls.UI.RadPageViewPage();
+            this.pvServices = new Telerik.WinControls.UI.RadPageViewPage();
             this.delService = new Telerik.WinControls.UI.RadButton();
-            this.save = new Telerik.WinControls.UI.RadButton();
+            this.btnSaveServices = new Telerik.WinControls.UI.RadButton();
             this.addService = new Telerik.WinControls.UI.RadButton();
-            this.radGridView1 = new Telerik.WinControls.UI.RadGridView();
+            this.GVService = new Telerik.WinControls.UI.RadGridView();
             this.pvSchedule = new Telerik.WinControls.UI.RadPageViewPage();
             this.radButton4 = new Telerik.WinControls.UI.RadButton();
             this.radGridView2 = new Telerik.WinControls.UI.RadGridView();
             this.error = new System.Windows.Forms.ErrorProvider(this.components);
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.PVTrainer)).BeginInit();
             this.PVTrainer.SuspendLayout();
             this.pvWorker.SuspendLayout();
@@ -92,11 +94,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.tbPhone)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbQualification)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnDelete)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSave)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbComment)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAddPhoto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbMiddleName)).BeginInit();
@@ -117,12 +119,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.lblPassword1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbLogin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel19)).BeginInit();
-            this.pveServices.SuspendLayout();
+            this.pvServices.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.delService)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.save)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSaveServices)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.addService)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridView1.MasterTemplate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GVService)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GVService.MasterTemplate)).BeginInit();
             this.pvSchedule.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radButton4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGridView2)).BeginInit();
@@ -135,12 +137,12 @@
             // 
             this.PVTrainer.Controls.Add(this.pvWorker);
             this.PVTrainer.Controls.Add(this.pvLogin);
-            this.PVTrainer.Controls.Add(this.pveServices);
+            this.PVTrainer.Controls.Add(this.pvServices);
             this.PVTrainer.Controls.Add(this.pvSchedule);
             this.PVTrainer.DefaultPage = this.pvWorker;
             this.PVTrainer.Location = new System.Drawing.Point(12, 12);
             this.PVTrainer.Name = "PVTrainer";
-            this.PVTrainer.SelectedPage = this.pvLogin;
+            this.PVTrainer.SelectedPage = this.pvWorker;
             this.PVTrainer.Size = new System.Drawing.Size(417, 445);
             this.PVTrainer.TabIndex = 0;
             this.PVTrainer.SelectedPageChanged += new System.EventHandler(this.PVTrainer_SelectedPageChanged);
@@ -157,11 +159,11 @@
             this.pvWorker.Controls.Add(this.tbPhone);
             this.pvWorker.Controls.Add(this.radLabel7);
             this.pvWorker.Controls.Add(this.tbQualification);
-            this.pvWorker.Controls.Add(this.radButton3);
+            this.pvWorker.Controls.Add(this.btnDelete);
             this.pvWorker.Controls.Add(this.btnSave);
             this.pvWorker.Controls.Add(this.radLabel5);
             this.pvWorker.Controls.Add(this.tbComment);
-            this.pvWorker.Controls.Add(this.radButton1);
+            this.pvWorker.Controls.Add(this.btnAddPhoto);
             this.pvWorker.Controls.Add(this.pictureBox1);
             this.pvWorker.Controls.Add(this.radLabel4);
             this.pvWorker.Controls.Add(this.tbMiddleName);
@@ -249,13 +251,14 @@
             this.tbQualification.Size = new System.Drawing.Size(214, 41);
             this.tbQualification.TabIndex = 24;
             // 
-            // radButton3
+            // btnDelete
             // 
-            this.radButton3.Location = new System.Drawing.Point(3, 367);
-            this.radButton3.Name = "radButton3";
-            this.radButton3.Size = new System.Drawing.Size(101, 24);
-            this.radButton3.TabIndex = 26;
-            this.radButton3.Text = "Удалить";
+            this.btnDelete.Location = new System.Drawing.Point(3, 367);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(101, 24);
+            this.btnDelete.TabIndex = 26;
+            this.btnDelete.Text = "Удалить";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnSave
             // 
@@ -283,13 +286,14 @@
             this.tbComment.Size = new System.Drawing.Size(164, 41);
             this.tbComment.TabIndex = 23;
             // 
-            // radButton1
+            // btnAddPhoto
             // 
-            this.radButton1.Location = new System.Drawing.Point(179, 203);
-            this.radButton1.Name = "radButton1";
-            this.radButton1.Size = new System.Drawing.Size(214, 24);
-            this.radButton1.TabIndex = 22;
-            this.radButton1.Text = "Загрузить фотографию";
+            this.btnAddPhoto.Location = new System.Drawing.Point(179, 203);
+            this.btnAddPhoto.Name = "btnAddPhoto";
+            this.btnAddPhoto.Size = new System.Drawing.Size(214, 24);
+            this.btnAddPhoto.TabIndex = 22;
+            this.btnAddPhoto.Text = "Загрузить фотографию";
+            this.btnAddPhoto.Click += new System.EventHandler(this.btnAddPhoto_Click);
             // 
             // pictureBox1
             // 
@@ -465,17 +469,17 @@
             this.radLabel19.TabIndex = 13;
             this.radLabel19.Text = "Логин";
             // 
-            // pveServices
+            // pvServices
             // 
-            this.pveServices.Controls.Add(this.delService);
-            this.pveServices.Controls.Add(this.save);
-            this.pveServices.Controls.Add(this.addService);
-            this.pveServices.Controls.Add(this.radGridView1);
-            this.pveServices.ItemSize = new System.Drawing.SizeF(103F, 28F);
-            this.pveServices.Location = new System.Drawing.Point(10, 37);
-            this.pveServices.Name = "pveServices";
-            this.pveServices.Size = new System.Drawing.Size(396, 397);
-            this.pveServices.Text = "Услуги рабоника";
+            this.pvServices.Controls.Add(this.delService);
+            this.pvServices.Controls.Add(this.btnSaveServices);
+            this.pvServices.Controls.Add(this.addService);
+            this.pvServices.Controls.Add(this.GVService);
+            this.pvServices.ItemSize = new System.Drawing.SizeF(103F, 28F);
+            this.pvServices.Location = new System.Drawing.Point(10, 37);
+            this.pvServices.Name = "pvServices";
+            this.pvServices.Size = new System.Drawing.Size(396, 397);
+            this.pvServices.Text = "Услуги рабоника";
             // 
             // delService
             // 
@@ -486,13 +490,14 @@
             this.delService.Text = "Удалить услугу";
             this.delService.Click += new System.EventHandler(this.delService_Click);
             // 
-            // save
+            // btnSaveServices
             // 
-            this.save.Location = new System.Drawing.Point(277, 370);
-            this.save.Name = "save";
-            this.save.Size = new System.Drawing.Size(116, 24);
-            this.save.TabIndex = 2;
-            this.save.Text = "Сохранить";
+            this.btnSaveServices.Location = new System.Drawing.Point(277, 370);
+            this.btnSaveServices.Name = "btnSaveServices";
+            this.btnSaveServices.Size = new System.Drawing.Size(116, 24);
+            this.btnSaveServices.TabIndex = 2;
+            this.btnSaveServices.Text = "Сохранить";
+            this.btnSaveServices.Click += new System.EventHandler(this.btnSaveServices_Click);
             // 
             // addService
             // 
@@ -503,21 +508,27 @@
             this.addService.Text = "Добавить услугу";
             this.addService.Click += new System.EventHandler(this.addService_Click);
             // 
-            // radGridView1
+            // GVService
             // 
-            this.radGridView1.Location = new System.Drawing.Point(3, 3);
+            this.GVService.Location = new System.Drawing.Point(3, 3);
             // 
             // 
             // 
+            this.GVService.MasterTemplate.AllowAddNewRow = false;
+            gridViewTextBoxColumn16.HeaderText = "ID";
+            gridViewTextBoxColumn16.Name = "ID";
+            gridViewTextBoxColumn16.Width = 30;
             gridViewTextBoxColumn17.HeaderText = "Услуга";
             gridViewTextBoxColumn17.Name = "services";
             gridViewTextBoxColumn17.Width = 370;
-            this.radGridView1.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
+            this.GVService.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
+            gridViewTextBoxColumn16,
             gridViewTextBoxColumn17});
-            this.radGridView1.MasterTemplate.ViewDefinition = tableViewDefinition9;
-            this.radGridView1.Name = "radGridView1";
-            this.radGridView1.Size = new System.Drawing.Size(390, 361);
-            this.radGridView1.TabIndex = 0;
+            this.GVService.MasterTemplate.ViewDefinition = tableViewDefinition7;
+            this.GVService.Name = "GVService";
+            this.GVService.ReadOnly = true;
+            this.GVService.Size = new System.Drawing.Size(390, 361);
+            this.GVService.TabIndex = 0;
             // 
             // pvSchedule
             // 
@@ -556,7 +567,7 @@
             gridViewTextBoxColumn18,
             gridViewTextBoxColumn19,
             gridViewTextBoxColumn20});
-            this.radGridView2.MasterTemplate.ViewDefinition = tableViewDefinition10;
+            this.radGridView2.MasterTemplate.ViewDefinition = tableViewDefinition8;
             this.radGridView2.Name = "radGridView2";
             this.radGridView2.Size = new System.Drawing.Size(390, 361);
             this.radGridView2.TabIndex = 0;
@@ -564,6 +575,10 @@
             // error
             // 
             this.error.ContainerControl = this;
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // TrainerCard
             // 
@@ -578,7 +593,6 @@
             this.RootElement.ApplyShapeToControl = true;
             this.Text = "Карточка работника";
             this.Load += new System.EventHandler(this.TrainerCard_Load);
-            this.Shown += new System.EventHandler(this.TrainerCard_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.PVTrainer)).EndInit();
             this.PVTrainer.ResumeLayout(false);
             this.pvWorker.ResumeLayout(false);
@@ -592,11 +606,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.tbPhone)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbQualification)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnDelete)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSave)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbComment)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAddPhoto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbMiddleName)).EndInit();
@@ -618,12 +632,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.lblPassword1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbLogin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel19)).EndInit();
-            this.pveServices.ResumeLayout(false);
+            this.pvServices.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.delService)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.save)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSaveServices)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.addService)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridView1.MasterTemplate)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GVService.MasterTemplate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GVService)).EndInit();
             this.pvSchedule.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.radButton4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGridView2.MasterTemplate)).EndInit();
@@ -638,12 +652,12 @@
 
         private Telerik.WinControls.UI.RadPageView PVTrainer;
         private Telerik.WinControls.UI.RadPageViewPage pvWorker;
-        private Telerik.WinControls.UI.RadPageViewPage pveServices;
-        private Telerik.WinControls.UI.RadButton radButton3;
+        private Telerik.WinControls.UI.RadPageViewPage pvServices;
+        private Telerik.WinControls.UI.RadButton btnDelete;
         private Telerik.WinControls.UI.RadButton btnSave;
         private Telerik.WinControls.UI.RadLabel radLabel5;
         private Telerik.WinControls.UI.RadRichTextEditor tbComment;
-        private Telerik.WinControls.UI.RadButton radButton1;
+        private Telerik.WinControls.UI.RadButton btnAddPhoto;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Telerik.WinControls.UI.RadLabel radLabel4;
         private Telerik.WinControls.UI.RadTextBox tbMiddleName;
@@ -655,9 +669,9 @@
         private Telerik.WinControls.UI.RadLabel radLabel1;
         private Telerik.WinControls.UI.RadLabel radLabel7;
         private Telerik.WinControls.UI.RadRichTextEditor tbQualification;
-        private Telerik.WinControls.UI.RadButton save;
+        private Telerik.WinControls.UI.RadButton btnSaveServices;
         private Telerik.WinControls.UI.RadButton addService;
-        private Telerik.WinControls.UI.RadGridView radGridView1;
+        private Telerik.WinControls.UI.RadGridView GVService;
         private Telerik.WinControls.UI.RadButton delService;
         private Telerik.WinControls.UI.RadPageViewPage pvSchedule;
         private Telerik.WinControls.UI.RadGridView radGridView2;
@@ -681,5 +695,6 @@
         private Telerik.WinControls.UI.RadLabel lblPassword1;
         private Telerik.WinControls.UI.RadTextBox tbLogin;
         private Telerik.WinControls.UI.RadLabel radLabel19;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }

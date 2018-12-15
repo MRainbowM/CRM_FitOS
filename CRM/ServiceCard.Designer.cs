@@ -28,60 +28,68 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn1 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn2 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn3 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn4 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn5 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition2 = new Telerik.WinControls.UI.TableViewDefinition();
+            this.components = new System.ComponentModel.Container();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn9 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn10 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition4 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn2 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn6 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn7 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn8 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition3 = new Telerik.WinControls.UI.TableViewDefinition();
             this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
             this.tbComment = new Telerik.WinControls.UI.RadRichTextEditor();
             this.tbName = new Telerik.WinControls.UI.RadTextBox();
             this.radLabel2 = new Telerik.WinControls.UI.RadLabel();
             this.radLabel3 = new Telerik.WinControls.UI.RadLabel();
-            this.sbCost = new Telerik.WinControls.UI.RadSpinEditor();
+            this.spCost = new Telerik.WinControls.UI.RadSpinEditor();
             this.radPageView1 = new Telerik.WinControls.UI.RadPageView();
             this.service = new Telerik.WinControls.UI.RadPageViewPage();
-            this.sbPeople = new Telerik.WinControls.UI.RadSpinEditor();
+            this.radLabel5 = new Telerik.WinControls.UI.RadLabel();
+            this.spMinuts = new Telerik.WinControls.UI.RadSpinEditor();
+            this.spPeople = new Telerik.WinControls.UI.RadSpinEditor();
             this.btnDelete = new Telerik.WinControls.UI.RadButton();
             this.radLabel4 = new Telerik.WinControls.UI.RadLabel();
             this.btnSave = new Telerik.WinControls.UI.RadButton();
             this.trainer = new Telerik.WinControls.UI.RadPageViewPage();
             this.addWorker = new Telerik.WinControls.UI.RadButton();
-            this.del = new Telerik.WinControls.UI.RadButton();
+            this.delTrainer = new Telerik.WinControls.UI.RadButton();
             this.radButton3 = new Telerik.WinControls.UI.RadButton();
-            this.radGridView1 = new Telerik.WinControls.UI.RadGridView();
+            this.GVTariners = new Telerik.WinControls.UI.RadGridView();
             this.room = new Telerik.WinControls.UI.RadPageViewPage();
-            this.radButton6 = new Telerik.WinControls.UI.RadButton();
-            this.radButton7 = new Telerik.WinControls.UI.RadButton();
-            this.radButton8 = new Telerik.WinControls.UI.RadButton();
-            this.radGridView2 = new Telerik.WinControls.UI.RadGridView();
+            this.addRoom = new Telerik.WinControls.UI.RadButton();
+            this.delRoom = new Telerik.WinControls.UI.RadButton();
+            this.saveRoom = new Telerik.WinControls.UI.RadButton();
+            this.GVRooms = new Telerik.WinControls.UI.RadGridView();
+            this.error = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbComment)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sbCost)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spCost)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPageView1)).BeginInit();
             this.radPageView1.SuspendLayout();
             this.service.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.sbPeople)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spMinuts)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spPeople)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDelete)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSave)).BeginInit();
             this.trainer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.addWorker)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.del)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.delTrainer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridView1.MasterTemplate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GVTariners)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GVTariners.MasterTemplate)).BeginInit();
             this.room.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridView2.MasterTemplate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.addRoom)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.delRoom)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.saveRoom)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GVRooms)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GVRooms.MasterTemplate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.error)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
@@ -99,7 +107,7 @@
             this.tbComment.Location = new System.Drawing.Point(3, 77);
             this.tbComment.Name = "tbComment";
             this.tbComment.SelectionFill = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(78)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.tbComment.Size = new System.Drawing.Size(362, 180);
+            this.tbComment.Size = new System.Drawing.Size(362, 154);
             this.tbComment.TabIndex = 1;
             // 
             // tbName
@@ -125,13 +133,13 @@
             this.radLabel3.TabIndex = 2;
             this.radLabel3.Text = "Стоимость услуги (руб.)";
             // 
-            // sbCost
+            // spCost
             // 
-            this.sbCost.Location = new System.Drawing.Point(3, 263);
-            this.sbCost.Name = "sbCost";
-            this.sbCost.Size = new System.Drawing.Size(100, 20);
-            this.sbCost.TabIndex = 3;
-            this.sbCost.TabStop = false;
+            this.spCost.Location = new System.Drawing.Point(3, 263);
+            this.spCost.Name = "spCost";
+            this.spCost.Size = new System.Drawing.Size(100, 20);
+            this.spCost.TabIndex = 3;
+            this.spCost.TabStop = false;
             // 
             // radPageView1
             // 
@@ -141,19 +149,21 @@
             this.radPageView1.DefaultPage = this.service;
             this.radPageView1.Location = new System.Drawing.Point(12, 12);
             this.radPageView1.Name = "radPageView1";
-            this.radPageView1.SelectedPage = this.service;
+            this.radPageView1.SelectedPage = this.room;
             this.radPageView1.Size = new System.Drawing.Size(389, 397);
             this.radPageView1.TabIndex = 4;
             ((Telerik.WinControls.UI.RadPageViewStripElement)(this.radPageView1.GetChildAt(0))).StripButtons = Telerik.WinControls.UI.StripViewButtons.None;
             // 
             // service
             // 
-            this.service.Controls.Add(this.sbPeople);
+            this.service.Controls.Add(this.radLabel5);
+            this.service.Controls.Add(this.spMinuts);
+            this.service.Controls.Add(this.spPeople);
             this.service.Controls.Add(this.btnDelete);
             this.service.Controls.Add(this.radLabel4);
             this.service.Controls.Add(this.btnSave);
             this.service.Controls.Add(this.radLabel1);
-            this.service.Controls.Add(this.sbCost);
+            this.service.Controls.Add(this.spCost);
             this.service.Controls.Add(this.tbComment);
             this.service.Controls.Add(this.radLabel3);
             this.service.Controls.Add(this.tbName);
@@ -164,13 +174,29 @@
             this.service.Size = new System.Drawing.Size(368, 349);
             this.service.Text = "Услуга";
             // 
-            // sbPeople
+            // radLabel5
             // 
-            this.sbPeople.Location = new System.Drawing.Point(3, 287);
-            this.sbPeople.Name = "sbPeople";
-            this.sbPeople.Size = new System.Drawing.Size(100, 20);
-            this.sbPeople.TabIndex = 5;
-            this.sbPeople.TabStop = false;
+            this.radLabel5.Location = new System.Drawing.Point(109, 240);
+            this.radLabel5.Name = "radLabel5";
+            this.radLabel5.Size = new System.Drawing.Size(145, 18);
+            this.radLabel5.TabIndex = 3;
+            this.radLabel5.Text = "Длительность услуги (мин)";
+            // 
+            // spMinuts
+            // 
+            this.spMinuts.Location = new System.Drawing.Point(3, 237);
+            this.spMinuts.Name = "spMinuts";
+            this.spMinuts.Size = new System.Drawing.Size(100, 20);
+            this.spMinuts.TabIndex = 4;
+            this.spMinuts.TabStop = false;
+            // 
+            // spPeople
+            // 
+            this.spPeople.Location = new System.Drawing.Point(3, 287);
+            this.spPeople.Name = "spPeople";
+            this.spPeople.Size = new System.Drawing.Size(100, 20);
+            this.spPeople.TabIndex = 5;
+            this.spPeople.TabStop = false;
             // 
             // btnDelete
             // 
@@ -201,9 +227,9 @@
             // trainer
             // 
             this.trainer.Controls.Add(this.addWorker);
-            this.trainer.Controls.Add(this.del);
+            this.trainer.Controls.Add(this.delTrainer);
             this.trainer.Controls.Add(this.radButton3);
-            this.trainer.Controls.Add(this.radGridView1);
+            this.trainer.Controls.Add(this.GVTariners);
             this.trainer.ItemSize = new System.Drawing.SizeF(60F, 28F);
             this.trainer.Location = new System.Drawing.Point(10, 37);
             this.trainer.Name = "trainer";
@@ -219,14 +245,14 @@
             this.addWorker.Text = "Добавить тренера";
             this.addWorker.Click += new System.EventHandler(this.addWorker_Click);
             // 
-            // del
+            // delTrainer
             // 
-            this.del.Location = new System.Drawing.Point(4, 322);
-            this.del.Name = "del";
-            this.del.Size = new System.Drawing.Size(110, 24);
-            this.del.TabIndex = 6;
-            this.del.Text = "Удалить тренера";
-            this.del.Click += new System.EventHandler(this.del_Click);
+            this.delTrainer.Location = new System.Drawing.Point(4, 322);
+            this.delTrainer.Name = "delTrainer";
+            this.delTrainer.Size = new System.Drawing.Size(110, 24);
+            this.delTrainer.TabIndex = 6;
+            this.delTrainer.Text = "Удалить тренера";
+            this.delTrainer.Click += new System.EventHandler(this.del_Click);
             // 
             // radButton3
             // 
@@ -236,85 +262,99 @@
             this.radButton3.TabIndex = 5;
             this.radButton3.Text = "Сохранить";
             // 
-            // radGridView1
+            // GVTariners
             // 
-            this.radGridView1.Location = new System.Drawing.Point(4, 4);
+            this.GVTariners.Location = new System.Drawing.Point(4, 4);
             // 
             // 
             // 
-            gridViewTextBoxColumn1.HeaderText = "ФИО тренера";
-            gridViewTextBoxColumn1.Name = "column1";
-            gridViewTextBoxColumn1.Width = 310;
-            gridViewTextBoxColumn2.HeaderText = "Пол";
-            gridViewTextBoxColumn2.Name = "column2";
-            gridViewTextBoxColumn2.Width = 30;
-            this.radGridView1.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewTextBoxColumn1,
-            gridViewTextBoxColumn2});
-            this.radGridView1.MasterTemplate.ViewDefinition = tableViewDefinition1;
-            this.radGridView1.Name = "radGridView1";
-            this.radGridView1.Size = new System.Drawing.Size(361, 312);
-            this.radGridView1.TabIndex = 0;
+            this.GVTariners.MasterTemplate.AllowAddNewRow = false;
+            gridViewTextBoxColumn9.HeaderText = "ID";
+            gridViewTextBoxColumn9.Name = "column3";
+            gridViewTextBoxColumn9.Width = 30;
+            gridViewTextBoxColumn10.HeaderText = "ФИО тренера";
+            gridViewTextBoxColumn10.Name = "column1";
+            gridViewTextBoxColumn10.Width = 290;
+            this.GVTariners.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
+            gridViewTextBoxColumn9,
+            gridViewTextBoxColumn10});
+            this.GVTariners.MasterTemplate.ViewDefinition = tableViewDefinition4;
+            this.GVTariners.Name = "GVTariners";
+            this.GVTariners.Size = new System.Drawing.Size(361, 312);
+            this.GVTariners.TabIndex = 0;
             // 
             // room
             // 
-            this.room.Controls.Add(this.radButton6);
-            this.room.Controls.Add(this.radButton7);
-            this.room.Controls.Add(this.radButton8);
-            this.room.Controls.Add(this.radGridView2);
+            this.room.Controls.Add(this.addRoom);
+            this.room.Controls.Add(this.delRoom);
+            this.room.Controls.Add(this.saveRoom);
+            this.room.Controls.Add(this.GVRooms);
             this.room.ItemSize = new System.Drawing.SizeF(79F, 28F);
             this.room.Location = new System.Drawing.Point(10, 37);
             this.room.Name = "room";
             this.room.Size = new System.Drawing.Size(368, 349);
             this.room.Text = "Помещения";
             // 
-            // radButton6
+            // addRoom
             // 
-            this.radButton6.Location = new System.Drawing.Point(120, 322);
-            this.radButton6.Name = "radButton6";
-            this.radButton6.Size = new System.Drawing.Size(129, 24);
-            this.radButton6.TabIndex = 11;
-            this.radButton6.Text = "Добавить помещение";
+            this.addRoom.Location = new System.Drawing.Point(120, 322);
+            this.addRoom.Name = "addRoom";
+            this.addRoom.Size = new System.Drawing.Size(129, 24);
+            this.addRoom.TabIndex = 11;
+            this.addRoom.Text = "Добавить помещение";
+            this.addRoom.Click += new System.EventHandler(this.addRoom_Click);
             // 
-            // radButton7
+            // delRoom
             // 
-            this.radButton7.Location = new System.Drawing.Point(4, 322);
-            this.radButton7.Name = "radButton7";
-            this.radButton7.Size = new System.Drawing.Size(110, 24);
-            this.radButton7.TabIndex = 10;
-            this.radButton7.Text = "Удалить";
+            this.delRoom.Location = new System.Drawing.Point(4, 322);
+            this.delRoom.Name = "delRoom";
+            this.delRoom.Size = new System.Drawing.Size(110, 24);
+            this.delRoom.TabIndex = 10;
+            this.delRoom.Text = "Удалить";
+            this.delRoom.Click += new System.EventHandler(this.delRoom_Click);
             // 
-            // radButton8
+            // saveRoom
             // 
-            this.radButton8.Location = new System.Drawing.Point(255, 322);
-            this.radButton8.Name = "radButton8";
-            this.radButton8.Size = new System.Drawing.Size(110, 24);
-            this.radButton8.TabIndex = 9;
-            this.radButton8.Text = "Сохранить";
+            this.saveRoom.Location = new System.Drawing.Point(255, 322);
+            this.saveRoom.Name = "saveRoom";
+            this.saveRoom.Size = new System.Drawing.Size(110, 24);
+            this.saveRoom.TabIndex = 9;
+            this.saveRoom.Text = "Сохранить";
+            this.saveRoom.Click += new System.EventHandler(this.saveRoom_Click);
             // 
-            // radGridView2
+            // GVRooms
             // 
-            this.radGridView2.Location = new System.Drawing.Point(4, 3);
+            this.GVRooms.Location = new System.Drawing.Point(4, 3);
             // 
             // 
             // 
-            gridViewTextBoxColumn3.HeaderText = "Название";
-            gridViewTextBoxColumn3.Name = "column1";
-            gridViewTextBoxColumn3.Width = 130;
-            gridViewTextBoxColumn4.HeaderText = "Оборудование";
-            gridViewTextBoxColumn4.Name = "column2";
-            gridViewTextBoxColumn4.Width = 150;
-            gridViewTextBoxColumn5.HeaderText = "Вмест-ть";
-            gridViewTextBoxColumn5.Name = "column3";
-            gridViewTextBoxColumn5.Width = 60;
-            this.radGridView2.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewTextBoxColumn3,
-            gridViewTextBoxColumn4,
-            gridViewTextBoxColumn5});
-            this.radGridView2.MasterTemplate.ViewDefinition = tableViewDefinition2;
-            this.radGridView2.Name = "radGridView2";
-            this.radGridView2.Size = new System.Drawing.Size(361, 313);
-            this.radGridView2.TabIndex = 8;
+            this.GVRooms.MasterTemplate.AllowAddNewRow = false;
+            gridViewDecimalColumn2.HeaderText = "ID";
+            gridViewDecimalColumn2.Name = "column4";
+            gridViewDecimalColumn2.Width = 30;
+            gridViewTextBoxColumn6.HeaderText = "Название";
+            gridViewTextBoxColumn6.Name = "column1";
+            gridViewTextBoxColumn6.Width = 130;
+            gridViewTextBoxColumn7.HeaderText = "Оборудование";
+            gridViewTextBoxColumn7.Name = "column2";
+            gridViewTextBoxColumn7.Width = 120;
+            gridViewTextBoxColumn8.HeaderText = "Вмест-ть";
+            gridViewTextBoxColumn8.Name = "column3";
+            gridViewTextBoxColumn8.Width = 60;
+            this.GVRooms.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
+            gridViewDecimalColumn2,
+            gridViewTextBoxColumn6,
+            gridViewTextBoxColumn7,
+            gridViewTextBoxColumn8});
+            this.GVRooms.MasterTemplate.ViewDefinition = tableViewDefinition3;
+            this.GVRooms.Name = "GVRooms";
+            this.GVRooms.ReadOnly = true;
+            this.GVRooms.Size = new System.Drawing.Size(361, 313);
+            this.GVRooms.TabIndex = 8;
+            // 
+            // error
+            // 
+            this.error.ContainerControl = this;
             // 
             // ServiceCard
             // 
@@ -329,33 +369,35 @@
             this.RootElement.ApplyShapeToControl = true;
             this.Text = "Карточка услуги";
             this.Load += new System.EventHandler(this.ServiceCard_Load);
-            this.Shown += new System.EventHandler(this.ServiceCard_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbComment)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbName)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sbCost)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spCost)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPageView1)).EndInit();
             this.radPageView1.ResumeLayout(false);
             this.service.ResumeLayout(false);
             this.service.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.sbPeople)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spMinuts)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spPeople)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDelete)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSave)).EndInit();
             this.trainer.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.addWorker)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.del)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.delTrainer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridView1.MasterTemplate)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GVTariners.MasterTemplate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GVTariners)).EndInit();
             this.room.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.radButton6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridView2.MasterTemplate)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.addRoom)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.delRoom)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.saveRoom)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GVRooms.MasterTemplate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GVRooms)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.error)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
 
@@ -368,22 +410,25 @@
         private Telerik.WinControls.UI.RadTextBox tbName;
         private Telerik.WinControls.UI.RadLabel radLabel2;
         private Telerik.WinControls.UI.RadLabel radLabel3;
-        private Telerik.WinControls.UI.RadSpinEditor sbCost;
+        private Telerik.WinControls.UI.RadSpinEditor spCost;
         private Telerik.WinControls.UI.RadPageView radPageView1;
         private Telerik.WinControls.UI.RadPageViewPage service;
         private Telerik.WinControls.UI.RadButton btnDelete;
         private Telerik.WinControls.UI.RadButton btnSave;
         private Telerik.WinControls.UI.RadPageViewPage trainer;
         private Telerik.WinControls.UI.RadButton addWorker;
-        private Telerik.WinControls.UI.RadButton del;
+        private Telerik.WinControls.UI.RadButton delTrainer;
         private Telerik.WinControls.UI.RadButton radButton3;
-        private Telerik.WinControls.UI.RadGridView radGridView1;
+        private Telerik.WinControls.UI.RadGridView GVTariners;
         private Telerik.WinControls.UI.RadPageViewPage room;
-        private Telerik.WinControls.UI.RadButton radButton6;
-        private Telerik.WinControls.UI.RadButton radButton7;
-        private Telerik.WinControls.UI.RadButton radButton8;
-        private Telerik.WinControls.UI.RadGridView radGridView2;
-        private Telerik.WinControls.UI.RadSpinEditor sbPeople;
+        private Telerik.WinControls.UI.RadButton addRoom;
+        private Telerik.WinControls.UI.RadButton delRoom;
+        private Telerik.WinControls.UI.RadButton saveRoom;
+        private Telerik.WinControls.UI.RadGridView GVRooms;
+        private Telerik.WinControls.UI.RadSpinEditor spPeople;
         private Telerik.WinControls.UI.RadLabel radLabel4;
+        private System.Windows.Forms.ErrorProvider error;
+        private Telerik.WinControls.UI.RadLabel radLabel5;
+        private Telerik.WinControls.UI.RadSpinEditor spMinuts;
     }
 }

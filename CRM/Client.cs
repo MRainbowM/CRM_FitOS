@@ -2,164 +2,187 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace CRM
 {
-    //[Table("User")]
+    [Table("Users")]
     public class Client : User
     {
-        //[Key, ForeignKey("client")]
+        Client(User x)
+        {
+            ID = x.id;
+            surname = x.surname;
+            name = x.name;
+            middleName = x.middleName;
+            phone = x.phone;
+            sex = x.sex;
+            Login = x.login;
+            Password = x.password;
+            Email = x.email;
+            dob = x.dob;
+            comment = x.comment;
+            height = x.height;
+            weight= x.weight;
+            health = x.health;
+        }
+        public Client()
+        {
 
-
-        private string Surname;
-        private string Name;
-        private string MiddleName;
-        private Int16 Sex;
-        private int Height;
-        private int Weight;
-        private string Health;
-        private string Phone;
-        private DateTime DOB; //дата рождения
-        private string Comment;
-        private List<Photo> Photo;
-
-        public string surname
-        {
-            get { return Surname; }
-            private set { Surname = value; }
-        }
-        public string name
-        {
-            get
-            {
-                return Name;
-            }
-            private set
-            {
-                Name = value;
-            }
-        }
-        public string middleName
-        {
-            get
-            {
-                return MiddleName;
-            }
-            private set
-            {
-                MiddleName = value;
-            }
-        }
-        public Int16 sex
-        {
-            get { return Sex; }
-            private set { Sex = value; }
-        }
-        public int height
-        {
-            get
-            {
-                return Height;
-            }
-            private set
-            {
-                Height = value;
-            }
-        }
-        public int weight
-        {
-            get
-            {
-                return Weight;
-            }
-            private set
-            {
-                Weight = value;
-            }
-        }
-        public string health
-        {
-            get
-            {
-                return Health;
-            }
-            private set
-            {
-                Health = value;
-            }
-        }
-        public string phone
-        {
-            get
-            {
-                return Phone;
-            }
-            private set
-            {
-                Phone = value;
-            }
-        }
-        public DateTime dob
-        {
-            get
-            {
-                return DOB;
-            }
-            private set
-            {
-                DOB = value;
-            }
-        }
-        public string comment
-        {
-            get
-            {
-                return Comment;
-            }
-            private set
-            {
-                Comment = value;
-            }
-        }
-        public List<Photo> photo
-        {
-            get
-            {
-                return Photo;
-            }
-            private set
-            {
-                Photo = value;
-            }
         }
 
-        public void Add(string f, string i, string o, bool Sex, int Height, int Weight, string Phone,string Email, DateTime DOB, string Comment, string Health,string Login, string Password)
+        //private string Surname;
+        //private string Name;
+        //private string MiddleName;
+        //private Int16 Sex;
+        //private int Height;
+        //private int Weight;
+        //private string Health;
+        //private string Phone;
+        //private DateTime DOB; //дата рождения
+        //private string Comment;
+        //private List<Photo> Photo;
+
+        //public string surname
+        //{
+        //    get { return Surname; }
+        //    private set { Surname = value; }
+        //}
+        //public string name
+        //{
+        //    get
+        //    {
+        //        return Name;
+        //    }
+        //    private set
+        //    {
+        //        Name = value;
+        //    }
+        //}
+        //public string middleName
+        //{
+        //    get
+        //    {
+        //        return MiddleName;
+        //    }
+        //    private set
+        //    {
+        //        MiddleName = value;
+        //    }
+        //}
+        //public Int16 sex
+        //{
+        //    get { return Sex; }
+        //    private set { Sex = value; }
+        //}
+        //public int height
+        //{
+        //    get
+        //    {
+        //        return Height;
+        //    }
+        //    private set
+        //    {
+        //        Height = value;
+        //    }
+        //}
+        //public int weight
+        //{
+        //    get
+        //    {
+        //        return Weight;
+        //    }
+        //    private set
+        //    {
+        //        Weight = value;
+        //    }
+        //}
+        //public string health
+        //{
+        //    get
+        //    {
+        //        return Health;
+        //    }
+        //    private set
+        //    {
+        //        Health = value;
+        //    }
+        //}
+        //public string phone
+        //{
+        //    get
+        //    {
+        //        return Phone;
+        //    }
+        //    private set
+        //    {
+        //        Phone = value;
+        //    }
+        //}
+        //public DateTime dob
+        //{
+        //    get
+        //    {
+        //        return DOB;
+        //    }
+        //    private set
+        //    {
+        //        DOB = value;
+        //    }
+        //}
+        //public string comment
+        //{
+        //    get
+        //    {
+        //        return Comment;
+        //    }
+        //    private set
+        //    {
+        //        Comment = value;
+        //    }
+        //}
+        //public List<Photo> photo
+        //{
+        //    get
+        //    {
+        //        return Photo;
+        //    }
+        //    private set
+        //    {
+        //        Photo = value;
+        //    }
+        //}
+
+        public int Add(string f, string i, string o, bool Sex, int Height, int Weight, string Phone, string Email, DateTime DOB, string Comment, string Health, string Login, string Password)
         {
             using (ApplicationContext db = new ApplicationContext())
             {
                 Int16 s = 0;
                 if (Sex) { s = 1; }
                 db.Database.EnsureCreated();
-                Client client = new Client
+                Client client = new Client()
                 {
-                    Surname = f,
-                    Name = i,
-                    MiddleName = o,
-                    Sex = s,
-                    DOB = DOB,
-                    Phone = Phone,
-                    Comment = Comment,
-                    Height = Height,
-                    Email = Email,
-                    Health = Health,
-                    Login = Login,
-                    Password = Password
+                    surname = f,
+                    name = i,
+                    middleName = o,
+                    sex = s,
+                    dob = DOB,
+                    phone = Phone,
+                    comment = Comment,
+                    StateUser = "Client",
+                    height = Height,
+                    email = Email,
+                    health = Health,
+                    login = Login,
+                    password = Password
                 };
-                db.Clients.Add(client);
+                db.Users.Add(client);
                 db.SaveChanges();
+                int ID_Client = client.id;
+                return ID_Client;
             }
         }
 
@@ -170,31 +193,43 @@ namespace CRM
                 Int16 s = 0;
                 if (Sex) { s = 1; } // 1 - men, 0 - women
                 db.Database.EnsureCreated();
-                Client client = db.Clients.Where(c => c.ID == ID_Client).FirstOrDefault();
-                client.Surname = f;
-                client.Name = i;
-                client.MiddleName = o;
-                client.Sex = s;
-                client.DOB = DOB;
-                client.Phone = Phone;
-                client.Comment = Comment;
-                client.Height = Height;
-                client.Email = Email;
-                client.Health = Health;
-                client.Login = Login;
-                client.Password = Password;
+                //Client client = new Client(db.Users.Where(c => c.id == ID_Client).FirstOrDefault());
+                //client.surname = f;
+                //client.name = i;
+                //client.middleName = o;
+                //client.sex = s;
+                //client.dob = DOB;
+                //client.phone = Phone;
+                //client.comment = Comment;
+                //client.height = Height;
+                //client.email = Email;
+                //client.health = Health;
+                //client.login = Login;
+                //client.password = Password;
 
 
-
+                User user = db.Users.Where(c => c.id == ID_Client).FirstOrDefault();
+                user.surname = f;
+                user.name = i;
+                user.middleName = o;
+                user.sex = s;
+                user.dob = DOB;
+                user.phone = Phone;
+                user.comment = Comment;
+                user.height = Height;
+                user.email = Email;
+                user.health = Health;
+                user.login = Login;
+                user.password = Password;
 
                 db.SaveChanges();
             }
         }
-       
-        public static Client FindClientByID(int ID_Client)
+
+        public static Client FindByID(int ID_Client)
         {
             ApplicationContext db = new ApplicationContext();
-            Client client = db.Clients.Where(x => x.DateDelete == null && x.ID == ID_Client).FirstOrDefault();
+            Client client = new Client(db.Users.Where(x => x.dateDelete == null && x.id == ID_Client).FirstOrDefault());
             return client;
         }
 
@@ -202,38 +237,23 @@ namespace CRM
         {
             ApplicationContext db = new ApplicationContext();
 
-            List<Client> ClientList = db.Clients
-                    .Where(x => x.DateDelete == null)
-                    .Select(x => new Client
-                    {
-                        ID = x.ID,
-                        Surname = x.Surname,
-                        Name = x.Name,
-                        MiddleName = x.MiddleName,
-                        Phone = x.Phone,
-                        Sex = x.sex,
-                        Height = x.height,
-                        Weight = x.weight,
-                        Health = x.health,
-                        Login = x.login,
-                        Password = x.password,
-                        Email = x.email,
-                        DOB = x.dob,
-                        Comment = x.comment
-                    }).ToList();
+            List<Client> ClientList = db.Users
+                    .Where(x => x.dateDelete == null && x.stateUser == "Client")
+                    .Select(x => new Client(x)).ToList();
             return ClientList;
         }
 
-        public static void Del(int ID_Client)
-        {
-            using (ApplicationContext db = new ApplicationContext())
-            {
-                db.Database.EnsureCreated();
-                Client client = db.Clients.Where(c => c.ID == ID_Client).FirstOrDefault();
-                client.DateDelete = DateTime.Today.ToString();
+        //public static void Del(int ID_Client)
+        //{
+        //    using (ApplicationContext db = new ApplicationContext())
+        //    {
+        //        db.Database.EnsureCreated();
+        //        Client client = FindClientByID(ID_Client);
+        //        //Client client = db.User.Where(c => c.ID == ID_Client).FirstOrDefault();
+        //        client.DateDelete = DateTime.Today.ToString();
 
-                db.SaveChanges();
-            }
-        }
+        //        db.SaveChanges();
+        //    }
+        //}
     }
 }

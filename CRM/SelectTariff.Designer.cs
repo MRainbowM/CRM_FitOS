@@ -28,21 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn5 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn6 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn7 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn8 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewCheckBoxColumn gridViewCheckBoxColumn2 = new Telerik.WinControls.UI.GridViewCheckBoxColumn();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition2 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn1 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn1 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn2 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
             this.search = new Telerik.WinControls.UI.RadButton();
-            this.del = new Telerik.WinControls.UI.RadButton();
-            this.select = new Telerik.WinControls.UI.RadButton();
-            this.radGridView1 = new Telerik.WinControls.UI.RadGridView();
+            this.btnSelect = new Telerik.WinControls.UI.RadButton();
+            this.GVTariffs = new Telerik.WinControls.UI.RadGridView();
             ((System.ComponentModel.ISupportInitialize)(this.search)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.del)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.select)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridView1.MasterTemplate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSelect)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GVTariffs)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GVTariffs.MasterTemplate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,53 +51,40 @@
             this.search.Text = "Поиск";
             this.search.Click += new System.EventHandler(this.search_Click);
             // 
-            // del
+            // btnSelect
             // 
-            this.del.Location = new System.Drawing.Point(12, 373);
-            this.del.Name = "del";
-            this.del.Size = new System.Drawing.Size(110, 24);
-            this.del.TabIndex = 8;
-            this.del.Text = "Удалить";
+            this.btnSelect.Location = new System.Drawing.Point(435, 373);
+            this.btnSelect.Name = "btnSelect";
+            this.btnSelect.Size = new System.Drawing.Size(110, 24);
+            this.btnSelect.TabIndex = 7;
+            this.btnSelect.Text = "Выбрать";
+            this.btnSelect.Click += new System.EventHandler(this.btnSelect_Click);
             // 
-            // select
+            // GVTariffs
             // 
-            this.select.Location = new System.Drawing.Point(435, 373);
-            this.select.Name = "select";
-            this.select.Size = new System.Drawing.Size(110, 24);
-            this.select.TabIndex = 7;
-            this.select.Text = "Выбрать";
-            // 
-            // radGridView1
-            // 
-            this.radGridView1.Location = new System.Drawing.Point(12, 12);
+            this.GVTariffs.Location = new System.Drawing.Point(12, 12);
             // 
             // 
             // 
-            gridViewTextBoxColumn5.HeaderText = "Название";
-            gridViewTextBoxColumn5.Name = "column1";
-            gridViewTextBoxColumn5.Width = 130;
-            gridViewTextBoxColumn6.HeaderText = "Стоимость";
-            gridViewTextBoxColumn6.Name = "column2";
-            gridViewTextBoxColumn6.Width = 80;
-            gridViewTextBoxColumn7.HeaderText = "Дата начала продаж";
-            gridViewTextBoxColumn7.Name = "column3";
-            gridViewTextBoxColumn7.Width = 130;
-            gridViewTextBoxColumn8.HeaderText = "Дата окончания продаж";
-            gridViewTextBoxColumn8.Name = "column4";
-            gridViewTextBoxColumn8.Width = 130;
-            gridViewCheckBoxColumn2.HeaderText = "Выбор";
-            gridViewCheckBoxColumn2.Name = "column5";
-            gridViewCheckBoxColumn2.Width = 47;
-            this.radGridView1.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewTextBoxColumn5,
-            gridViewTextBoxColumn6,
-            gridViewTextBoxColumn7,
-            gridViewTextBoxColumn8,
-            gridViewCheckBoxColumn2});
-            this.radGridView1.MasterTemplate.ViewDefinition = tableViewDefinition2;
-            this.radGridView1.Name = "radGridView1";
-            this.radGridView1.Size = new System.Drawing.Size(534, 355);
-            this.radGridView1.TabIndex = 6;
+            this.GVTariffs.MasterTemplate.AllowAddNewRow = false;
+            gridViewDecimalColumn1.HeaderText = "ID";
+            gridViewDecimalColumn1.Name = "column3";
+            gridViewDecimalColumn1.Width = 30;
+            gridViewTextBoxColumn1.HeaderText = "Название";
+            gridViewTextBoxColumn1.Name = "column1";
+            gridViewTextBoxColumn1.Width = 300;
+            gridViewTextBoxColumn2.HeaderText = "Стоимость";
+            gridViewTextBoxColumn2.Name = "column2";
+            gridViewTextBoxColumn2.Width = 80;
+            this.GVTariffs.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
+            gridViewDecimalColumn1,
+            gridViewTextBoxColumn1,
+            gridViewTextBoxColumn2});
+            this.GVTariffs.MasterTemplate.ViewDefinition = tableViewDefinition1;
+            this.GVTariffs.Name = "GVTariffs";
+            this.GVTariffs.ReadOnly = true;
+            this.GVTariffs.Size = new System.Drawing.Size(534, 355);
+            this.GVTariffs.TabIndex = 6;
             // 
             // SelectTariff
             // 
@@ -109,20 +92,19 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(558, 408);
             this.Controls.Add(this.search);
-            this.Controls.Add(this.del);
-            this.Controls.Add(this.select);
-            this.Controls.Add(this.radGridView1);
+            this.Controls.Add(this.btnSelect);
+            this.Controls.Add(this.GVTariffs);
             this.Name = "SelectTariff";
             // 
             // 
             // 
             this.RootElement.ApplyShapeToControl = true;
             this.Text = "Выбор тарифа";
+            this.Load += new System.EventHandler(this.SelectTariff_Load);
             ((System.ComponentModel.ISupportInitialize)(this.search)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.del)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.select)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridView1.MasterTemplate)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSelect)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GVTariffs.MasterTemplate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GVTariffs)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
 
@@ -131,8 +113,7 @@
         #endregion
 
         private Telerik.WinControls.UI.RadButton search;
-        private Telerik.WinControls.UI.RadButton del;
-        private Telerik.WinControls.UI.RadButton select;
-        private Telerik.WinControls.UI.RadGridView radGridView1;
+        private Telerik.WinControls.UI.RadButton btnSelect;
+        private Telerik.WinControls.UI.RadGridView GVTariffs;
     }
 }

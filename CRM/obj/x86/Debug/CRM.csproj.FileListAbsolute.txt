@@ -227,7 +227,6 @@ C:\CRM\CRM\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\CRM\CRM\bin\Debug\Telerik.WinControls.xml
 C:\CRM\CRM\bin\Debug\Telerik.WinControls.GridView.xml
 C:\CRM\CRM\bin\Debug\Telerik.WinControls.UI.xml
-C:\CRM\CRM\obj\x86\Debug\CRM.csprojResolveAssemblyReference.cache
 C:\CRM\CRM\obj\x86\Debug\CRM.exe.config
 C:\CRM\CRM\obj\x86\Debug\CRM.Autorizatsiya.resources
 C:\CRM\CRM\obj\x86\Debug\CRM.CardCard.resources
@@ -253,9 +252,7 @@ C:\CRM\CRM\obj\x86\Debug\CRM.SearchTariff.resources
 C:\CRM\CRM\obj\x86\Debug\CRM.SearchWorker.resources
 C:\CRM\CRM\obj\x86\Debug\CRM.SelectClient.resources
 C:\CRM\CRM\obj\x86\Debug\CRM.SelectService.resources
-C:\CRM\CRM\obj\x86\Debug\CRM.SelectWorker.resources
 C:\CRM\CRM\obj\x86\Debug\CRM.ServiceCard.resources
-C:\CRM\CRM\obj\x86\Debug\CRM.ServiceInTariff.resources
 C:\CRM\CRM\obj\x86\Debug\CRM.TariffCard.resources
 C:\CRM\CRM\obj\x86\Debug\CRM.TariffTime.resources
 C:\CRM\CRM\obj\x86\Debug\CRM.проверка_подключения.resources
@@ -265,3 +262,7 @@ C:\CRM\CRM\obj\x86\Debug\CRM.csproj.CoreCompileInputs.cache
 C:\CRM\CRM\obj\x86\Debug\CRM.exe
 C:\CRM\CRM\obj\x86\Debug\CRM.pdb
 C:\CRM\CRM\obj\x86\Debug\CRM.TrainerCard.resources
+C:\CRM\CRM\obj\x86\Debug\CRM.ServiceInTariffForm.resources
+C:\CRM\CRM\obj\x86\Debug\CRM.csprojResolveAssemblyReference.cache
+C:\CRM\CRM\obj\x86\Debug\CRM.OptionsForm.resources
+C:\CRM\CRM\obj\x86\Debug\CRM.SelectTrainer.resources

@@ -14,49 +14,162 @@ namespace CRM
         protected string Login;
         protected string Password;
         protected string Email;
-        //protected string StateUser;
+        private string Surname;
+        private string Name;
+        private string MiddleName;
+        private Int16 Sex;
+        private string Phone;
+        private DateTime DOB; //дата рождения
+        private string Comment;
         protected string DateDelete;
+
+        private int Height; //client
+        private int Weight;//client
+        private string Health;//client
+
+        private string Qualification;//trainer
+
+        protected string StateUser;
 
         public int id
         {
             get { return ID; }
-            private set { ID = value; }
+            set { ID = value; }
         }
         public string login
         {
             get { return Login; }
-            private set { Login = value; }
+            set { Login = value; }
         }
         public string password
         {
-            get {return Password;}
-            private set{Password = value;}
+            get { return Password; }
+            set { Password = value; }
         }
         public string email
         {
             get { return Email; }
-            private set { Email = value; }
+            set { Email = value; }
         }
-        //public string stateUser
-        //{
-        //    get { return StateUser; }
-        //    private set { StateUser = value; }
-        //}
+        public string surname
+        {
+            get { return Surname; }
+            set { Surname = value; }
+        }
+        public string name
+        {
+            get
+            {
+                return Name;
+            }
+            set
+            {
+                Name = value;
+            }
+        }
+        public string middleName
+        {
+            get
+            {
+                return MiddleName;
+            }
+            set
+            {
+                MiddleName = value;
+            }
+        }
+        public Int16 sex
+        {
+            get { return Sex; }
+            set { Sex = value; }
+        }
+        public string phone
+        {
+            get { return Phone; }
+            set { Phone = value; }
+        }
+        public DateTime dob
+        {
+            get { return DOB; }
+            set { DOB = value; }
+        }
+        public string comment
+        {
+            get { return Comment; }
+            set { Comment = value; }
+        }
         public string dateDelete
         {
             get { return DateDelete; }
-            private set { DateDelete = value; }
+            set { DateDelete = value; }
         }
 
-
+        public int height
+        {
+            get
+            {
+                return Height;
+            }
+            set
+            {
+                Height = value;
+            }
+        }
+        public int weight
+        {
+            get
+            {
+                return Weight;
+            }
+            set
+            {
+                Weight = value;
+            }
+        }
+        public string health
+        {
+            get
+            {
+                return Health;
+            }
+            set
+            {
+                Health = value;
+            }
+        }
+       
+        public string qualification
+        {
+            get { return Qualification; }
+            set { Qualification = value; }
+        }
         
+        public string stateUser
+        {
+            get { return StateUser; }
+            set { StateUser = value; }
+        }
+        
+
+
         public bool Validation(string Login, string Password)
         {
             bool s = true;
             return s;
         }
 
-        
+        public static void Del(int ID)
+        {
+            using (ApplicationContext db = new ApplicationContext())
+            {
+                db.Database.EnsureCreated();
+                User user = db.Users.Where(c => c.ID == ID).FirstOrDefault();
+                user.DateDelete = DateTime.Today.ToString();
+
+                db.SaveChanges();
+            }
+        }
+
 
 
     }
